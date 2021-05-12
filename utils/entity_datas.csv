@@ -1,0 +1,872 @@
+﻿loop,10
+code,10
+variable,10
+type,10
+bottom,10
+Junk characters,10
+Gnome shell,10
+KDE Plasma,10
+Unity,10
+core,10
+GUI,10
+Network,10
+I/O,10
+Driver,10
+File System,10
+Hardware,10
+Language,10
+API,10
+Standard,10
+Platform,10
+Framework,10
+defect test,10
+Mobile,10
+Code,10
+MATE,10
+Wayland compositor,10
+Xfce,10
+Enlightment,10
+Sugar,10
+twm,10
+dwm,10
+Cinnamon,10
+Smalltalk,10
+Mac OS,10
+NEXTSTEP,10
+OS X,10
+Microsoft Windows,10
+Unix,10
+Linux,10
+BTRON,10
+TownsOS,10
+MSX-View,10
+SX-Window,10
+BeOS,10
+Newton OS,10
+Zaurus OS,10
+Palm OS,10
+iOS,10
+Android,10
+Firefox OS,10
+progress,10
+ReopenEditorMenu,10
+Resources Perspective,10
+text,10
+Modem,10
+Openflow,10
+HTTP,10
+HTTPS,10
+SMTP,10
+SNMP,10
+FTP,10
+Telnet,10
+SIP,10
+SSH,10
+NFS,10
+RTSP,10
+XMPP,10
+Whois,10
+TLS,10
+XDR,10
+ASN.1,10
+SMB,10
+AFP,10
+NCP,10
+RPC,10
+NetBIOS,10
+ASP,10
+IGMP,10
+Winsock,10
+BSD sockets,10
+TCP,10
+UDP,10
+RTP,10
+SCTP,10
+SPX,10
+IP,10
+ICMP,10
+IPX,10
+BGP,10
+OSPF,10
+RIP,10
+IGRP,10
+EIGRP,10
+ARP,10
+RARP,10
+Ethernet,10
+HDLC,10
+PPP,10
+DNS,10
+POP3,10
+LAN,10
+WAN,10
+MAN,10
+FDM,10
+TDM,10
+WDM,10
+Repeater,10
+Bridge,10
+Router,10
+Gateway,10
+Firewall,10
+Topology,10
+Baseband,10
+Broadband,10
+Bandwidth,10
+Backbone,10
+Baudrate,10
+monitor,10
+LPT,10
+keyboard(computing),10
+trackpoint,10
+trackball,10
+touchpad,10
+mouse,10
+scanner,10
+microphone,10
+camera,10
+printer,10
+loudspeaker,10
+RAM,10
+FDC,10
+HDC,10
+HDD,10
+exFAT,10
+COW,10
+FAT,10
+NTFS,10
+HFS,10
+HFS+,10
+ext3,10
+ext4,10
+Btrfs,10
+XFS,10
+UFS,10
+CDFS,10
+UDF,10
+Flash file system,10
+Win FS,10
+NFS,10
+administrator password,10
+ACPI,10
+AGP,10
+AMD,10
+AMI,10
+AMR,10
+APM,10
+AT Bus,10
+ATA,10
+ATC,10
+ATX,10
+Audio Card,10
+Audio Mixer,10
+Base Memory,10
+Battery,10
+Ball God Array,10
+BIOS,10
+Board,10
+Burse Bus,10
+Cache,10
+CBGA,10
+CD player,10
+CD-RCM,10
+Centronics Patallel Interface,10
+Celeron,10
+Chipset,10
+Chipset Features Setup,10
+CMOS,10
+CD-ROM Driver,10
+Clock,10
+Clock Rata,10
+Core Voltage,10
+CPU,10
+CRT,10
+CRC,10
+Data Bus,10
+ECC,10
+EDC,10
+ECP,10
+EEPROM,10
+EISA,10
+EIDE,10
+EMI,10
+EPROM,10
+Expansion Card,10
+FAT,10
+FDC,10
+FIFO,10
+Flash Memory,10
+FMW,10
+FPU,10
+GB,10
+GM,10
+GMR,10
+Green PC,10
+GMCH,10
+HDC,10
+HDD,10
+ICH,10
+IR,10
+IRQ,10
+ISA Bus,10
+I/O address,10
+ISO,10
+ITV,10
+Joystick port,10
+Jumper,10
+Kilo Byte,10
+Keyboard,10
+Keylock,10
+LAN,10
+LED,10
+LPT,10
+Master,10
+Mega Byte,10
+MODEM,10
+MPU,10
+MMX,10
+MMU,10
+Monitor,10
+Network Card,10
+Network Adapter,10
+NPU,10
+OEM,10
+OS,10
+Online Plug,10
+Partition,10
+Parallel port,10
+PBGA,10
+PCB,10
+PCI,10
+PC Card slot,10
+Peripheral,10
+PLCC,10
+PM,10
+PnP,10
+PNP/PCI Configuration Setup,10
+POP,10
+POST,10
+PQFP,10
+PS/2,10
+Primary Partition,10
+Primary Master,10
+Primary Slave,10
+RAM,10
+Refresh,10
+Normal refresh,10
+Remark CPU,10
+ROM,10
+RTC,10
+RES,10
+SIO,10
+SMM,10
+S/N,10
+Serial Port,10
+Socket,10
+Sound Blaster Card,10
+Sound Card,10
+SPK,10
+SPD,10
+SDDRAM,10
+SMT,10
+SOJ,10
+SRAM,10
+Turbo mode,10
+UNIX,10
+USB,10
+Utility,10
+UPS,10
+compatibility,10
+VCD,10
+VESA,10
+VGA,10
+VOD,10
+Volume Lable,10
+Video Adapter,10
+Workgroup,10
+Workstation,10
+Asyncio,10
+Python,10
+Rust,10
+Haskell,10
+PureScript,10
+Go,10
+Scala,10
+"Ruby
+
+Events",10
+Clojure,10
+ClojureScript,10
+Elixir,10
+Elm,10
+Erlang,10
+Julia,10
+Lua,10
+C,10
+C/C++,10
+R,10
+D,10
+Common Lisp,10
+Perl,10
+Groovy,10
+Dart,10
+"Java
+
+RxJava",10
+Kotlin,10
+OCaml,10
+ColdFusion,10
+Fortran,10
+".NET
+
+Core",10
+"PHP
+
+Composer ",10
+Delphi,10
+Assembler,10
+AutoHotkey,10
+AutoIt,10
+Crystal,10
+TypeScript,10
+Frege ,10
+CMake ,10
+"JavaScript
+Standard Style
+Promises
+Tips
+Network Layer
+Micro npm Packages
+Mad Science npm Packages
+Maintenance Modules - For npm packages.
+npm - Package manager.
+AVA - Test runner.
+ESLint - Linter.
+Functional Programming
+Observables",10
+"Swift
+Education
+Playgrounds",10
+TCP,10
+AJAX,10
+JSON,10
+xml,10
+pdf,10
+text,10
+excel,10
+csv,10
+Factory Pattern,10
+Abstact Factory Pattern,10
+Builder Pattern,10
+Prototype Pattern,10
+Singleton Pattern,10
+Adapter Pattern,10
+Bridge Pattern,10
+Composite Pattern,10
+Decorator Pattern,10
+Façade Pattern,10
+Flyweight Pattern,10
+Proxy Pattern,10
+Chain of Responsibility Pattern,10
+Command Pattern,10
+Interpreter Pattern,10
+Iterator Pattern,10
+Memento Pattern,10
+Observer Pattern,10
+State Pattern,10
+Strategy Pattren,10
+Visitor Pattern,10
+AOP,10
+ARP/RARP,10
+DAO ,10
+DHCP,10
+DI,10
+ICF ,10
+ICMP,10
+IEEE,10
+IoC,10
+IPSec,10
+ISP ,10
+NAT,10
+JNDI,10
+ORM,10
+POJO ,10
+PPPoE,10
+QoS,10
+SSH,10
+UNC  ,10
+light DOM,10
+shadow DOM,10
+Custom elements,10
+HTML Imports,10
+Static testing,10
+SQA,10
+Walkthrough,10
+Review,10
+Execution-Based Testing,10
+White-Box Testing,10
+Black-Box Testing,10
+Gray-Box Testing,10
+Software Development Life Cycle,10
+Smoke Test,10
+Regression Test,10
+Function Testing,10
+Performance Testing,10
+Volume Testing,10
+Stress Testing,10
+Usability Testing,10
+Installation Testing,10
+UI Testing,10
+Configuration Testing,10
+Documentation Testing,10
+Compatibility Testing,10
+Security Testing,10
+Recovery Testing,10
+Unit Testing,10
+Intergration Testing,10
+System Test,10
+The Test Objectives,10
+The Test Scope,10
+The Test Strategy,10
+The Test procedures,10
+The Test Environment,10
+The Test Completion Criteria,10
+The Test Cases,10
+The Test Schedules,10
+Risk,10
+a master test plan,10
+The Test Specification,10
+The Requirements Phase,10
+Interface,10
+The End User,10
+Formal Test Environment,10
+Verifying The Requirements,10
+Ambiguous Requirements,10
+Operation and Maintenance,10
+Reusability,10
+Reliability,10
+Correctness,10
+Performance,10
+Robustness,10
+Utility,10
+Code Inspection,10
+test,10
+regression,10
+Outgoing call,10
+Touch Panel,10
+Cellphone,10
+headset,10
+BT headset,10
+Receiver,10
+Microphone,10
+Speaker,10
+Battery,10
+Charger,10
+Screen,10
+LCD,10
+Touch Panel,10
+LED,10
+USB cable,10
+flash light,10
+Dialpad,10
+Front Camera,10
+Rear Camera,10
+SHF jack  ,10
+USB jack  ,10
+up/down/left/right key,10
+power key,10
+Camera key,10
+Key pad   ,10
+Side key  ,10
+side_up volume key,10
+side_down volume key,10
+Volume key,10
+LSK(Left soft key),10
+RSK(Right soft key),10
+MSK(Middle soft key),10
+Send key,10
+End key,10
+Hook key,10
+Menu key,10
+Home key,10
+Back key,10
+calendar,10
+alarm,10
+schedule,10
+anniversary,10
+calculator,10
+notepad,10
+Bluetooth,10
+currency exchange,10
+unit conversion,10
+PowerWord,10
+world time,10
+PC tool,10
+SMS,10
+MMS,10
+Contacts,10
+Browser,10
+Setting,10
+WeChat,10
+File manger,10
+PC Sync,10
+Picbridge  ,10
+Bluetooth,10
+Irda  ,10
+Wlan  ,10
+GPS ,10
+FM ,10
+TTS  ,10
+Fingerprint,10
+illegal,10
+invalid,10
+default,10
+optional,10
+selected,10
+unselected,10
+dynamic,10
+incomplete,10
+detailed,10
+automatically,10
+plug in,10
+insert,10
+pull out,10
+Pop up,10
+Tap the screen/Click on a screen,10
+Press any key,10
+slipped screen,10
+Long press ,10
+Short press ,10
+Scroll the focus,10
+Entry,10
+View,10
+Charge in,10
+Activate,10
+Deactivate,10
+Power on/off ,10
+Interrupt,10
+Refresh ,10
+Return,10
+Turn-On/off,10
+Turn-up/down,10
+Sleep（n.）,10
+Awake,10
+Highlight ,10
+Prompt,10
+Prompt dialog box,10
+Prompt,10
+Prompt dialog box,10
+Frozen screen,10
+Halt,10
+Mess up,10
+Reset ,10
+Restart,10
+auto power-off,10
+auto power-on,10
+White screen,10
+Memory allocate failed,10
+Memory leak,10
+error alarm,10
+Main screen,10
+R1,10
+R2,10
+L1,10
+L2,10
+Main Menu,10
+Sub menu,10
+Previous ,10
+Next ,10
+Interface,10
+Previous screen,10
+Next screen,10
+Indicater bar,10
+Notifications zone,10
+Scroll bar,10
+Title bar,10
+Icon,10
+Battery  icon,10
+Signal strength  icon,10
+Profile icon,10
+Unsent message icon,10
+Unread message icon,10
+Full message in UIM status icon,10
+Full message in phone status icon,10
+Full message both in UIM&phone status icon,10
+Calling icon,10
+In-call icon,10
+Call forward icon,10
+Shortcut icon,10
+MO：Mobile－originated,10
+MT：Mobile－terminated,10
+Cursor,10
+Power on/off,10
+Scroll bar ,10
+CLI ,10
+Alert tone,10
+Ring tone,10
+Key tone,10
+OTA ringing tone,10
+OTA video/MP3/MP4,10
+OTA package,10
+Key guard,10
+Alert tone,10
+Ring tone,10
+Key tone,10
+Error tone,10
+Time out,10
+Done prompt ,10
+Undone prompt ,10
+Query prompt,10
+Error prompt,10
+Information prompt,10
+Waitting prompt,10
+Data query ,10
+Soft notification ,10
+Progress bar,10
+Slider,10
+Hint prompt,10
+Help text ,10
+Idle state,10
+Keyword ,10
+Default Value,10
+User Defined ,10
+Option,10
+Option list ,10
+Screen auto-lock ,10
+Phone lock,10
+Keypad lock,10
+Security code ,10
+Call barring password （SS code）,10
+Extension,10
+Extension Number,10
+Emergency Call ,10
+Calling party,10
+Outgoing call,10
+Called party,10
+Create call,10
+During a （Multi/Multi-party）call ,10
+Call Succeeded,10
+End call（local/remote）,10
+Call duration,10
+Call Back ,10
+Multi call,10
+Swap,10
+Private,10
+DTMF(Dual Tone Multi-Frequency ),10
+Incoming call,10
+Active call,10
+Hold call,10
+Waiting Call,10
+MPTY(Multi-party call ),10
+CW(Call Waiting ),10
+CF(Call forward),10
+UCF(Unconditional Call Forwarding),10
+CFB(Call Forwarding if mobile subscriber Busy),10
+CFNRY(Call Forwarding if No Reply),10
+CFNRC(Call Forwarding on mobile Not Reachable),10
+CB(Call barring ),10
+BAOC(Barring of All Outgoing Calls),10
+BAIC(Barring of All Incoming Calls),10
+CLIR(Calling Line Identification Restriction),10
+CLIP(Calling Line Identification Presentation ),10
+COLP(Connected Line identification Presentation ),10
+COLR(Connected Line identification Restriction),10
+Mute,10
+IME,10
+Smart English,10
+PinYin,10
+Stroke,10
+Simplified Chinese,10
+Traditional Chinese,10
+Digit,10
+SBC/DBC Symbol,10
+Input number ,10
+IME region,10
+Candidate bar,10
+IME  icon,10
+Index number,10
+Upper case ,10
+Lower case,10
+Title case ,10
+Sentence case ,10
+Editing space ,10
+Focus,10
+Highlight ,10
+Insertion Point,10
+Cursor,10
+Message editor ,10
+Node.js,10
+Frontend Development,10
+iOS,10
+Android,10
+IoT & Hybrid Apps,10
+Electron,10
+Cordova,10
+React Native,10
+Xamarin,10
+"Linux 
+Containers
+",10
+macOS         ,10
+watchOS,10
+JVM,10
+Salesforce,10
+Amazon Web Services,10
+Windows,10
+IPFS,10
+Fuse,10
+Heroku,10
+Raspberry Pi ,10
+Qt ,10
+Command-Line,10
+Screensavers,10
+Windows,10
+Bugzilla,10
+NumPY,10
+Mircosoft Word,10
+Mircosoft Powerpoint,10
+Mircosoft Excel,10
+Microsoft Visual Studio,10
+Eclipse,10
+SharpDevelop,10
+NetBeans,10
+vi,10
+emacs,10
+make,10
+Delphi,10
+Anjuta,10
+CodeBlocks,10
+CodeLite,10
+Dev-C++,10
+Geany,10
+GNAT Programming Studio,10
+Kdevelop,10
+MonoDevelop,10
+Qdevelop,10
+Qt Creator,10
+wxDev-C++,10
+Xcode,10
+Turbo C,10
+C++ Builder,10
+GNAVI,10
+Lazarus,10
+Visual Works,10
+Maguma Open Studio,10
+FBSL,10
+BLIde,10
+Gambas,10
+OpenLDev,10
+kinterdev,10
+Quanta Plus,10
+eric,10
+Motor,10
+Jgrasp,10
+jEdit,10
+TruStudio Foundation,10
+Oxygen XML Editor,10
+Omnis Studio,10
+REALbasic,10
+MULTI,10
+X-develop,10
+Komodo,10
+Wing IDE,10
+Wind River Workbench,10
+DMDScript,10
+MinGW Developer Studio,10
+Stylus Studio XML IDE,10
+Zeus,10
+Synapse,10
+Kylix,10
+Code Forge,10
+Jbuilder,10
+Interllij IDEA,10
+Sun ONE Studio,10
+Rational Application Developer,10
+Jcreator,10
+Jdeveloper,10
+WebLogic Workshop,10
+WebSphere Studio,10
+Cubic IDE,10
+Toolbox App,10
+PyCharm,10
+WebStorm,10
+PhpStorm,10
+ReSharper,10
+Rider,10
+Clion,10
+Datalore,10
+DataGrip,10
+RubyMine,10
+AppCode,10
+GoLand,10
+ReSharper C++,10
+dotPeek,10
+dotTrace,10
+dotMemory,10
+dotCover,10
+YouTrack,10
+TeamCity,10
+Upsource,10
+Hub,10
+Kotlin,10
+MPS,10
+Sublime,10
+EditPlus,10
+Visual Studio Code,10
+Wampserver,10
+Navicat,10
+Haroopad,10
+PostMan,10
+Dash,10
+NSLogger,10
+SourceTree,10
+Cornerstone,10
+Datum Free,10
+Reveal,10
+DSYMTools,10
+PicU,10
+Charles,10
+lantern,10
+AFNetworking,10
+Masonry,10
+MJRefresh,10
+Mjextension,10
+IQKeyboardManager,10
+SAMKeychain,10
+SDWebImage,10
+CocoaLumberjack,10
+FLEX,10
+OHHTTPStubs,10
+Junit,10
+QuickAccess,10
+JAI,10
+E-S-R consortium,10
+JDO,10
+Google,10
+JMF,10
+JNDI,10
+JPA,10
+JSAPI,10
+J2D,10
+J3D,10
+JOGL,10
+JAF,10
+JMS,10
+JSF,10
+JAX-RPC,10
+XQJ,10
+CLDC,10
+JTAPI,10
+STM32Java,10
+MicroEJ,10
+Aspose API,10
+JXL API,10
+JExcel,10
+Jackson (API),10
+Batoo JPA ,10
+JSAPI,10
+JTAPI,10
+JTA,10
+JavaDocs,10
+RuntimeException,10
+NPE,10

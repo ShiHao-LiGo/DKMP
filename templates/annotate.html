@@ -1,0 +1,92 @@
+{% extends "base.html" %} {% block mainbody %}
+    <style>
+        .file,texts{
+        position: relative;
+        display: inline-block;
+        background: #D0EEFF;
+        border: 1px solid #99D3F5;
+        border-radius: 4px;
+        padding: 4px 12px;
+        overflow: hidden;
+        color: #1E88C7;
+        text-decoration: none;
+        text-indent: 0;
+        line-height: 20px;
+    }
+    .file input {
+        position: absolute;
+        font-size: 100px;
+        right: 0;
+        top: 0;
+        opacity: 0;
+    }
+    .file:hover {
+        background: #AADFFD;
+        border-color: #78C3F3;
+        color: #004974;
+        text-decoration: none;
+    }
+    </style>
+
+    <div style="position: center;text-align:center;border: #00a0df 1px solid ;padding: 20px" id="it">
+        <form action="{% url 'demo:local' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+            <table class="table table-condensed">
+                <tr>
+                       <td>
+                 <div class="file">选择压缩包<input type="file" name="file"></div>
+                   </td>
+                </tr>
+                <tr>
+                       <td>
+                   <div class="showFileName"></div>
+                   </td>
+                </tr>
+                <tr>
+{#                    <td rowspan=$rowspan style='vertical-align: middle;text-align: center;' ><input type="submit" style="background:#AADFFD " value="上传"></td>#}
+                    			       <td><div class="btn-group" style="padding: 2%">
+			            <button type="submit"  class="btn btn-primary" >上传</button>
+			        </div></td>
+                </tr>
+            </table>
+
+            <div class="fileerrorTip"></div>
+
+        </form>
+    </div>
+                <!--collapse start-->
+            <div class="panel-group m-bot20" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                    [查看数据导入结果]
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            {% autoescape off %}
+                            <h5>{{ rlt }}</h5>
+                            {% endautoescape %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    <script type="text/javascript">
+
+$("#it").on("change","input[type='file']",function(){
+    alert("你哈");
+    var filePath=$(this).val();
+    if(filePath.indexOf("zip")!==-1 ){
+        $(".fileerrorTip").html("").hide();
+        var arr=filePath.split('\\');
+        var fileName=arr[arr.length-1];
+        $(".showFileName").html(fileName);
+    }else{
+        $(".showFileName").html("");
+        $(".fileerrorTip").html("您未上传文件，或者您上传文件类型有误！").show();
+        return false
+    }
+})
+</script>
+{% endblock %}

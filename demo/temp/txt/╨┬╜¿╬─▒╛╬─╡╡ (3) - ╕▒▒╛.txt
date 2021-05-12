@@ -1,0 +1,37 @@
+[{
+	'rel': Component(Node('BUG_ID', Comment = '', Component = 'Messaging System', Milestone = 'Firefox 80', Priority = 'P1', Product = 'Firefox', Serverity = '--', Status = 'VERIFIED FIXED', Title = 'Add tooltip when displaying pre-imported top sites on multistage import screen', Type = 'enhancement', name = '1643419'), Node('Component', name = 'Messaging System')),
+	'entity2': Node('Component', name = 'Messaging System'),
+	'relationCount': 0
+}, {
+	'rel': Milestone(Node('BUG_ID', Comment = '', Component = 'Messaging System', Milestone = 'Firefox 80', Priority = 'P1', Product = 'Firefox', Serverity = '--', Status = 'VERIFIED FIXED', Title = 'Add tooltip when displaying pre-imported top sites on multistage import screen', Type = 'enhancement', name = '1643419'), Node('Milestone', name = 'Firefox 80')),
+	'entity2': Node('Milestone', name = 'Firefox 80'),
+	'relationCount': 0
+}, {
+	'rel': Product(Node('BUG_ID', Comment = '', Component = 'Messaging System', Milestone = 'Firefox 80', Priority = 'P1', Product = 'Firefox', Serverity = '--', Status = 'VERIFIED FIXED', Title = 'Add tooltip when displaying pre-imported top sites on multistage import screen', Type = 'enhancement', name = '1643419'), Node('Product', name = 'Firefox')),
+	'entity2': Node('Product', name = 'Firefox'),
+	'relationCount': 0
+}, {
+	'rel': Type(Node('BUG_ID', Comment = '', Component = 'Messaging System', Milestone = 'Firefox 80', Priority = 'P1', Product = 'Firefox', Serverity = '--', Status = 'VERIFIED FIXED', Title = 'Add tooltip when displaying pre-imported top sites on multistage import screen', Type = 'enhancement', name = '1643419'), Node('Type', name = 'enhancement')),
+	'entity2': Node('Type', name = 'enhancement'),
+	'relationCount': 0
+}, {
+	'rel': Status(Node('BUG_ID', Comment = '', Component = 'Messaging System', Milestone = 'Firefox 80', Priority = 'P1', Product = 'Firefox', Serverity = '--', Status = 'VERIFIED FIXED', Title = 'Add tooltip when displaying pre-imported top sites on multistage import screen', Type = 'enhancement', name = '1643419'), Node('Status', name = 'VERIFIED FIXED')),
+	'entity2': Node('Status', name = 'VERIFIED FIXED'),
+	'relationCount': 0
+}, {
+	'rel': Severity(Node('BUG_ID', Comment = '', Component = 'Messaging System', Milestone = 'Firefox 80', Priority = 'P1', Product = 'Firefox', Serverity = '--', Status = 'VERIFIED FIXED', Title = 'Add tooltip when displaying pre-imported top sites on multistage import screen', Type = 'enhancement', name = '1643419'), Node('Severity', name = '--')),
+	'entity2': Node('Severity', name = '--'),
+	'relationCount': 0
+}, {
+	'rel': Priority(Node('BUG_ID', Comment = '', Component = 'Messaging System', Milestone = 'Firefox 80', Priority = 'P1', Product = 'Firefox', Serverity = '--', Status = 'VERIFIED FIXED', Title = 'Add tooltip when displaying pre-imported top sites on multistage import screen', Type = 'enhancement', name = '1643419'), Node('Priority', name = 'P1')),
+	'entity2': Node('Priority', name = 'P1'),
+	'relationCount': 0
+}, {
+	'rel': Comment(Node('BUG_ID', Comment = '', Component = 'Messaging System', Milestone = 'Firefox 80', Priority = 'P1', Product = 'Firefox', Serverity = '--', Status = 'VERIFIED FIXED', Title = 'Add tooltip when displaying pre-imported top sites on multistage import screen', Type = 'enhancement', name = '1643419'), Node('Comment', name = '')),
+	'entity2': Node('Comment', name = ''),
+	'relationCount': 0
+}, {
+	'rel': Title(Node('BUG_ID', Comment = '', Component = 'Messaging System', Milestone = 'Firefox 80', Priority = 'P1', Product = 'Firefox', Serverity = '--', Status = 'VERIFIED FIXED', Title = 'Add tooltip when displaying pre-imported top sites on multistage import screen', Type = 'enhancement', name = '1643419'), Node('Title', name = 'Add tooltip when displaying pre-imported top sites on multistage import screen')),
+	'entity2': Node('Title', name = 'Add tooltip when displaying pre-imported top sites on multistage import screen'),
+	'relationCount': 0
+}]

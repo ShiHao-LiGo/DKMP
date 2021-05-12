@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="rm-uf6u5vvw69rjmftr23o.mysql.rds.aliyuncs.com" id="996652f2-aa77-4ead-a067-8a412dcd2e3d" port="22" nameFormat="DESCRIPTIVE" username="test_01" />
+    </configs>
+  </component>
+</project>

@@ -1,0 +1,181 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "children": [],
+                            "name": "loop code"
+                        },
+                        {
+                            "children": [],
+                            "name": "variable type"
+                        }
+                    ],
+                    "name": "core"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [],
+                            "name": "buttom Junk"
+                        },
+                        {
+                            "children": [],
+                            "name": "characters"
+                        }
+                    ],
+                    "name": "GUI"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [],
+                            "name": "Modem Openflow"
+                        }
+                    ],
+                    "name": "Network"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [],
+                            "name": "Monitor LPT"
+                        }
+                    ],
+                    "name": "I/O"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [],
+                            "name": "FDC HDC HDD"
+                        }
+                    ],
+                    "name": "Driver"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [],
+                            "name": "exFAT"
+                        },
+                        {
+                            "children": [],
+                            "name": "copy-on-write"
+                        }
+                    ],
+                    "name": "File System"
+                },
+                                {
+                    "children": [
+                        {
+                            "children": [],
+                            "name": "Base Memory ECP"
+                        }
+                    ],
+                    "name": "Hardware"
+                }
+
+            ],
+            "name": "Component"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "children": [],
+                            "name": "C C# Python"
+                        }
+                    ],
+                    "name": "Language"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [],
+                            "name": "javax.swing.plaf"
+                        }
+                    ],
+                    "name": "API"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [],
+                            "name": "AMD64 Android"
+                        }
+                    ],
+                    "name": "Platform"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [],
+                            "name": "NumPY"
+                        },
+                        {
+                            "children": [],
+                            "name": "Microsoft WORD"
+                        }
+                    ],
+                    "name": "Framework"
+                }
+
+
+            ],
+            "name": "specific"
+        },
+                {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "children": [],
+                            "name": "Static testing SQA"
+                        }
+                    ],
+                    "name": "defect test"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [],
+                            "name": "wrong inconsistent"
+                        }
+                    ],
+                    "name": "common adjective"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [],
+                            "name": "break miss reset"
+                        }
+                    ],
+                    "name": "common verb"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [],
+                            "name": "Outgoing call"
+                        },
+                        {
+                            "children": [],
+                            "name": "Touch Panel"
+                        }
+
+                    ],
+                    "name": "Mobile"
+                }
+
+            ],
+            "name": "General"
+        }
+
+    ],
+    "name": "软件缺陷分类"
+}

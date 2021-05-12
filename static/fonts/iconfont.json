@@ -1,0 +1,114 @@
+{
+  "id": "2508609",
+  "name": "demo",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "14122674",
+      "name": "数据标注",
+      "font_class": "shujubiaozhu",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "7155298",
+      "name": "注销登录",
+      "font_class": "zhuxiaodenglu",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "7762176",
+      "name": "注销",
+      "font_class": "ziyuanxhdpi",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "16322375",
+      "name": "注销",
+      "font_class": "tuichudenglu",
+      "unicode": "e6d1",
+      "unicode_decimal": 59089
+    },
+    {
+      "icon_id": "19998810",
+      "name": "注销",
+      "font_class": "zhuxiao",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "754771",
+      "name": "资源报送-数据导入",
+      "font_class": "ziyuanbaosongshujudaoru",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
+      "icon_id": "2334449",
+      "name": "符号-测试",
+      "font_class": "ceshi",
+      "unicode": "e6da",
+      "unicode_decimal": 59098
+    },
+    {
+      "icon_id": "4066491",
+      "name": "数据导入",
+      "font_class": "shujudaoru",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "11661885",
+      "name": "数据导入",
+      "font_class": "shujudaoru1",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "13867117",
+      "name": "测试历史版本",
+      "font_class": "lishibanben",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "17360488",
+      "name": "数据导入",
+      "font_class": "shujudaoru2",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "20912247",
+      "name": "数据导入",
+      "font_class": "shujudaoru3",
+      "unicode": "e8b3",
+      "unicode_decimal": 59571
+    },
+    {
+      "icon_id": "10617577",
+      "name": "登录-用户",
+      "font_class": "denglu-yonghu",
+      "unicode": "e669",
+      "unicode_decimal": 58985
+    },
+    {
+      "icon_id": "10292039",
+      "name": "删 除",
+      "font_class": "shanchu",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "18311262",
+      "name": "删 除",
+      "font_class": "shanchu1",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    }
+  ]
+}

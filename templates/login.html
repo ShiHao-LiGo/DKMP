@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>登陆注册</title>
+    {% load static %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="/static/css/login_style.css">
+<style>
+    body {
+	align-items: center;
+	background-color: var(--white);
+	background: url("/static/img/tech-2.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: grid;
+	height: 100vh;
+	place-items: center;
+}
+    .overlay {
+	background-color: var(--lightblue);
+	background: url("/static/img/tech-2.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	left: -100%;
+	position: relative;
+	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+	width: 200%;
+}
+</style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="test" class="container right-panel-active">
+    		<!-- Sign In -->
+			<div class="container__form container--signin">
+				<form action="/login/" method="post" class="form" id="form11" >
+					<h2 class="form__title">登录</h2>
+                    {% csrf_token %}
+					<input type="text" placeholder="用户名" name="username" class="input" />
+					<input type="password" placeholder="密码" name="pwd" class="input" />
+					<a href="/123" class="link">忘记密码？</a>
+					<button class="btn" id="btn1"> 登录</button>
+				</form>
+			</div>
+			<!-- Sign Up -->
+			<div class="container__form container--signup">
+				<form action="/register/" method="post" class="form" id="form12">
+					<h2 class="form__title">注册</h2>
+                    {% csrf_token %}
+					<input type="text" placeholder="用户名" name="username" class="input" />
+					<input type="email" id="em" placeholder="邮箱" name="email" class="input" />
+					<input type="password" placeholder="密码" name="pwd" class="input" />
+                    {% if message %}
+                        <p>{{ message }}</p>
+                    {% endif %}
+					<button class="btn" id="register1">注册</button>
+				</form>
+			</div>
+
+
+
+			<!-- Overlay -->
+			<div class="container__overlay">
+				<div class="overlay">
+					<div class="overlay__panel overlay--left">
+						<button class="btn" id="signIn">登录</button>
+					</div>
+					<div class="overlay__panel overlay--right">
+						<button class="btn" id="signUp">注册</button>
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- partial -->
+  <script  src="/static/js/login_script.js"></script>
+<script src="/static/js/jquery-1.8.3.min.js"></script>
+<script src="/static/js/jquery.validate.js"></script>
+<script>
+$(document).ready(function(){
+    $("#form12").validate({
+    rules: {
+        // 不需要使用 "" 括起来
+        username: {required :true},
+        email: {required :true},
+        pwd: {required :true},
+    }, messages: {
+            username: {
+                required: "用户名不能为空"
+            },
+            email: {
+                required: "邮箱不能为空"
+            },
+            pwd:{required :"密码不能为空"}
+        },
+});
+});
+
+</script>
+</body>
+</html>
