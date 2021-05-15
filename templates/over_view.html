@@ -7,10 +7,18 @@
         {#    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>#}
     </head>
         <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-7">
             <div id="shutu" style="width: 100%;height:400px;">
 
             </div>
+        </div>
+        <div class="col-md-5">
+            <ul class="list-group">
+           <li class="list-group-item"><a href="#">1.我爱北京天安门</a></li>
+            <li class="list-group-item"><a href="#">2.天安门上太阳升</a></li>
+            <li class="list-group-item"><a href="#">3.伟大领袖毛主席</a></li>
+            <li class="list-group-item"><a href="#">4.指引我们向前进</a></li>
+        </ul>
         </div>
     </div>
     <div class="row">
@@ -28,6 +36,9 @@
             <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
             <div class="col-md-5">
                 <div class="panel " style="background: #1c2434">
+                    <header class="panel-heading">
+                    缺陷关系图示例（来自Bugzilla）
+                </header>
                     <div class="panel-body ">
                         <div id="graph" style="width: 100%;height:500px;"></div>
                     </div>
@@ -160,11 +171,10 @@
                         fontSize: 20,
                         color: "#c8e6c6"
                     },
-                    text: '关系图',
                 },
                 tooltip: {
                     formatter: function (x) {
-                        return x.data.des;
+                        return x.data;
                     }
                 },
                 toolbox: {
@@ -254,6 +264,11 @@
             // 数据更新动画的时长。[ default: 300 ]
             // 使用刚指定的配置项和数据显示图表。
             myChart.setOption(option);
+            myChart.on('dblclick', function (params) {
+            // 控制台打印数据的名称
+                console.log(params.name)
+            window.open('https://bugzilla.mozilla.org/show_bug.cgi?id=' + encodeURIComponent(params.name));
+        });
         </script>
     {% endif %}
     <script type="text/javascript">
