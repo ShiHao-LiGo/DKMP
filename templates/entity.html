@@ -117,12 +117,20 @@
                 if (url.indexOf("?") != -1) {
                     str = url.split("=")[1]
                 }
+                var n = Number(str);
+                if (!isNaN(n))
+                {
+                    node['category'] = 0;
+                }else{
+                    node['category'] = 1;
+                }
                 //实体１
                 node['name'] = str;
                 //alert(document.getElementById('user_text').value)
                 node['draggable'] = true;
                 node['symbolSize'] = 80;
-                node['category'] = 0;
+
+
                 var id = 0;
                 node['id'] = id.toString();
                 data.push(node);
@@ -146,6 +154,13 @@
                     if ('url' in entityRelation[0][i]['entity2']) {
                         node['category'] = 0;
                     } else {
+                        node['category'] = 1;
+                    }
+                    var n = Number(node['name']);
+                    if (!isNaN(n))
+                    {
+                        node['category'] = 0;
+                    }else{
                         node['category'] = 1;
                     }
                     id = i + 1

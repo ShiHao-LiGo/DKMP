@@ -46,6 +46,8 @@ def entity(request):
     # 根据传入的实体名称搜索出关系
     if (request.GET):
         entity = request.GET['user_text']
+        if entity is None:
+            return render(request, 'entity.html', {'ctx': ctx})
         # 连接数据库
         db = neo_con
         if (entity.isdigit()):
@@ -130,6 +132,8 @@ def search_relation(request):
         if (len(entity1) != 0 and len(relation) != 0 and len(entity2) == 0):
             searchResult = db.findOtherEntities(entity1, relation)
             searchResult = sortDict(searchResult)
+            print("开始啦")
+            print(searchResult)
             if (len(searchResult) > 0):
                 return render(request, 'relation.html', {'searchResult': json.dumps(searchResult, ensure_ascii=False)})
         # 若输入entity2和relation，则输出与entity2具有relation关系的其他实体

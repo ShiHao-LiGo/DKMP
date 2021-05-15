@@ -71,7 +71,7 @@ def deal_type(BugID):
     ret_dict['relations'] = relations
     return ret_dict
 
-
+#范围，进度，成本，质量
 def deal_priority(BugID):
     ret_dict = {'bid': BugID}
     relations = []

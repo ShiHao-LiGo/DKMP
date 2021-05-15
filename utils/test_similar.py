@@ -1,3 +1,4 @@
+from nltk import word_tokenize
 from sklearn.feature_extraction.text import TfidfVectorizer
 import numpy as np
 from scipy.linalg import norm
@@ -19,10 +20,23 @@ def tf_similarity(s1, s2):
     # 计算TF系数
     return np.dot(vectors[0], vectors[1]) / (norm(vectors[0]) * norm(vectors[1]))
 
-
+def tfidf(s1):
+    s8='loop code variable type bottom Junk characters Gnome shell KDE Plasma Unity core GUI Network I/O Driver'
+    # 将字中间加入空格
+    # 转化为TF矩阵
+    def add_space(s):
+        return ''.join(list(s))
+    s1,s8= add_space(s1),add_space(s8)
+    print(s1,s8)
+    cv = TfidfVectorizer(tokenizer=lambda s: s.split())
+    corpus = [s1,s8]
+    vectors = cv.fit_transform(corpus).toarray()
+    print("计算TF-IDF值yayaya")
+    print(corpus)
+    print(vectors)
 def tfidf_similarity(s1, s2):
     def add_space(s):
-        return ' '.join(list(s))
+        return ''.join(list(s))
 
     # 将字中间加入空格
     s1, s2 = add_space(s1), add_space(s2)
@@ -30,6 +44,8 @@ def tfidf_similarity(s1, s2):
     cv = TfidfVectorizer(tokenizer=lambda s: s.split())
     corpus = [s1, s2]
     vectors = cv.fit_transform(corpus).toarray()
+    print("计算TF-IDF值")
+    print(vectors)
     # 计算TF系数
     return np.dot(vectors[0], vectors[1]) / (norm(vectors[0]) * norm(vectors[1]))
 
@@ -53,27 +69,29 @@ def jaccard_similarity(s1, s2):
 
 
 if __name__ == '__main__':
-    s1 = "Bug-108746's des？"
+
+    s1 = "To code improve scannability"
     s2 = '出现的原因是什么'
+    tfidf(s1)
     s3 = '严重性怎么样'
     s4 = '优先级怎么样'
     an = {}
     i = 0
     s = ['type或类型或种类', '出现的原因或症状或描述是什么怎么复现或步骤或describe', '严重性或severity怎么样', '优先级或priority怎么样', '状态或status是怎么样',
          '现在的阶段或milestone', '作用的产品或product']
-    for k in s:
-        sim1 = tfidf_similarity(s1, k)
-        sim2 = jaccard_similarity(s1, k)
-        sim3=tf_similarity(s3, s1)
-        an[i] = sim2
-        i = i + 1
-    an = sorted(an.items(), key=lambda x: x[1], reverse=True)
-    choice = an[0][0]
-    print(choice == 3)
-    print(an[0][1])
-    print(s)
-    print(an)
-    print(an[0][0])
+    # for k in s:
+    #     sim1 = tfidf_similarity(s1, k)
+    #     sim2 = jaccard_similarity(s1, k)
+    #     sim3=tf_similarity(s3, s1)
+    #     an[i] = sim2
+    #     i = i + 1
+    # an = sorted(an.items(), key=lambda x: x[1], reverse=True)
+    # choice = an[0][0]
+    # print(choice == 3)
+    # print(an[0][1])
+    # print(s)
+    # print(an)
+    # print(an[0][0])
     # print("tf-idf计算相似度 ")
     # print(tfidf_similarity(s3, s1))
     # print(tfidf_similarity(s3, s2))

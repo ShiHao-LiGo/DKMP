@@ -81,18 +81,18 @@ class Neo4j:
     # 根据entity的名称返回关系（正向）
     def getEntityRelationbyEntity(self, value):
         answer = self.graph.run("MATCH (entity1) - [rel] -> (entity2)  WHERE entity1.name = \"" + str(
-            value) + "\" RETURN rel,entity2").data()
+            value) + "\" RETURN rel,entity2 Limit 50").data()
         return answer
 
     # 根据entity的名称返回关系（反向）
     def getEntityRelationbyEntityText(self, value):
         answer = self.graph.run("MATCH (entity1) <- [rel] - (entity2)  WHERE entity1.name = \"" + str(
-            value) + "\" RETURN rel,entity2").data()
+            value) + "\" RETURN rel,entity2 Limit 50").data()
         return answer
 
     # 查找entity1及其对应的关系（与getEntityRelationbyEntity的差别就是返回值不一样）
     def findRelationByEntity(self, entity1):
-        answer = self.graph.run("MATCH (n1 {name:\"" + str(entity1) + "\"})- [rel] -> (n2) RETURN n1,rel,n2").data()
+        answer = self.graph.run("MATCH (n1 {name:\"" + str(entity1) + "\"})- [rel] -> (n2) RETURN n1,rel,n2 Limit 50").data()
         # print(answer)
         # if(answer is None):
         # 	answer = self.graph.run("MATCH (n1:NewNode {title:\""+entity1+"\"})- [rel] -> (n2) RETURN n1,rel,n2" ).data()
@@ -110,7 +110,7 @@ class Neo4j:
 
     # 根据entity1和关系查找entity2
     def findOtherEntities(self, entity, relation):
-        answer = self.graph.run("MATCH (n1 {title:\"" + str(entity) + "\"})- [rel {type:\"" + str(
+        answer = self.graph.run("MATCH (n1 {name:\"" + str(entity) + "\"})- [rel {name:\"" + str(
             relation) + "\"}] -> (n2) RETURN n1,rel,n2").data()
         # if(answer is None):
         #	answer = self.graph.run("MATCH (n1:NewNode {title:\"" + entity + "\"})- [rel:RELATION {type:\""+relation+"\"}] -> (n2) RETURN n1,rel,n2" ).data()
