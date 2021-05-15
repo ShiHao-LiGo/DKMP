@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39cc2001-ebda-48af-8239-d99f3ba203fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/utils/LDA_e.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/mytest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/pyneo_auto.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/python_tf_idf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/shibie.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/stop_word_ana.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/test_list.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/test_url.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/test_w_csv.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/QA_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/QA_view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/entity_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/entity_view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/entity.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/entity.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/over_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/over_view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/relation.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/relation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/create1.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/create1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/neo4j_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/neo4j_models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/test_similar.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/test_similar.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -334,12 +317,45 @@
       <workItem from="1620870643046" duration="14175000" />
       <workItem from="1620917202420" duration="10450000" />
       <workItem from="1620965392956" duration="11036000" />
-      <workItem from="1620988854875" duration="12955000" />
+      <workItem from="1620988854875" duration="19021000" />
     </task>
+    <task id="LOCAL-00001" summary="一些测试和优化">
+      <created>1621043826372</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1621043826372</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="一些测试和优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="一些测试和优化" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -377,7 +393,7 @@
     <SUITE FILE_PATH="coverage/mykg$test_list.coverage" NAME="test_list Coverage Results" MODIFIED="1620979799506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/mykg$LDA_e.coverage" NAME="LDA_e Coverage Results" MODIFIED="1620918778451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/mykg$test_similar.coverage" NAME="test_similar Coverage Results" MODIFIED="1620883877007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/mykg$create1.coverage" NAME="create1 Coverage Results" MODIFIED="1621041243964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/mykg$create1.coverage" NAME="create1 Coverage Results" MODIFIED="1621050473176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/mykg$annotation.coverage" NAME="annotation Coverage Results" MODIFIED="1618033432070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/demo" />
   </component>
 </project>

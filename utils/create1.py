@@ -29,7 +29,7 @@ def neo4j_build():
         data = list(reader)
         # for i in range(9):
         #     print(data[1][i])
-        for i in range(5285,len(data)):
+        for i in range(9197,len(data)):
             print(i)
             # extra = {}
             # extra['name'] = data[i][0]
@@ -185,23 +185,24 @@ def neo4j_build():
 #           'apoc.refactor.mergeNodes(nodelist) YIELD node RETURN node')
 def reduce():
     graph = Graph("http://localhost:7474", username="neo4j", password='123456789')
-    graph.run('MATCH (n:Describe) WITH n.name AS name, COLLECT(n) AS nodelist, COUNT(*) AS count WHERE count > 1 CALL '
+    #删除重复结点
+    # graph.run('MATCH (n:Describe) WITH n.name AS name, COLLECT(n) AS nodelist, COUNT(*) AS count WHERE count > 1 CALL '
+    #           'apoc.refactor.mergeNodes(nodelist) YIELD node RETURN node')
+    # graph.run('MATCH (n:Priority) WITH n.name AS name, COLLECT(n) AS nodelist, COUNT(*) AS count WHERE count > 1 CALL '
+    #           'apoc.refactor.mergeNodes(nodelist) YIELD node RETURN node')
+    # graph.run('MATCH (n:Severity) WITH n.name AS name, COLLECT(n) AS nodelist, COUNT(*) AS count WHERE count > 1 CALL '
+    #           'apoc.refactor.mergeNodes(nodelist) YIELD node RETURN node')
+    # graph.run('MATCH (n:Status) WITH n.name AS name, COLLECT(n) AS nodelist, COUNT(*) AS count WHERE count > 1 CALL '
+    #           'apoc.refactor.mergeNodes(nodelist) YIELD node RETURN node')
+    # graph.run('MATCH (n:Type) WITH n.name AS name, COLLECT(n) AS nodelist, COUNT(*) AS count WHERE count > 1 CALL '
+    #           'apoc.refactor.mergeNodes(nodelist) YIELD node RETURN node')
+    # graph.run('MATCH (n:Product) WITH n.name AS name, COLLECT(n) AS nodelist, COUNT(*) AS count WHERE count > 1 CALL '
+    #           'apoc.refactor.mergeNodes(nodelist) YIELD node RETURN node')
+    graph.run('MATCH (n:product) WITH n.name AS name, COLLECT(n) AS nodelist, COUNT(*) AS count WHERE count > 1 CALL '
               'apoc.refactor.mergeNodes(nodelist) YIELD node RETURN node')
-    graph.run('MATCH (n:Priority) WITH n.name AS name, COLLECT(n) AS nodelist, COUNT(*) AS count WHERE count > 1 CALL '
-              'apoc.refactor.mergeNodes(nodelist) YIELD node RETURN node')
-    graph.run('MATCH (n:Severity) WITH n.name AS name, COLLECT(n) AS nodelist, COUNT(*) AS count WHERE count > 1 CALL '
-              'apoc.refactor.mergeNodes(nodelist) YIELD node RETURN node')
-    graph.run('MATCH (n:Status) WITH n.name AS name, COLLECT(n) AS nodelist, COUNT(*) AS count WHERE count > 1 CALL '
-              'apoc.refactor.mergeNodes(nodelist) YIELD node RETURN node')
-    graph.run('MATCH (n:Type) WITH n.name AS name, COLLECT(n) AS nodelist, COUNT(*) AS count WHERE count > 1 CALL '
-              'apoc.refactor.mergeNodes(nodelist) YIELD node RETURN node')
-    graph.run('MATCH (n:Product) WITH n.name AS name, COLLECT(n) AS nodelist, COUNT(*) AS count WHERE count > 1 CALL '
-              'apoc.refactor.mergeNodes(nodelist) YIELD node RETURN node')
-    graph.run('MATCH (n:Product) WITH n.name AS name, COLLECT(n) AS nodelist, COUNT(*) AS count WHERE count > 1 CALL '
-              'apoc.refactor.mergeNodes(nodelist) YIELD node RETURN node')
-    graph.run('MATCH (n:Milestone) WITH n.name AS name, COLLECT(n) AS nodelist, COUNT(*) AS count WHERE count > 1 CALL '
-              'apoc.refactor.mergeNodes(nodelist) YIELD node RETURN node')
-    graph.run('MATCH (n:Component) WITH n.name AS name, COLLECT(n) AS nodelist, COUNT(*) AS count WHERE count > 1 CALL '
+    # graph.run('MATCH (n:Milestone) WITH n.name AS name, COLLECT(n) AS nodelist, COUNT(*) AS count WHERE count > 1 CALL '
+    #           'apoc.refactor.mergeNodes(nodelist) YIELD node RETURN node')
+    graph.run('MATCH (n:component) WITH n.name AS name, COLLECT(n) AS nodelist, COUNT(*) AS count WHERE count > 1 CALL '
               'apoc.refactor.mergeNodes(nodelist) YIELD node RETURN node')
 
 
@@ -209,5 +210,6 @@ def reduce():
 # graph.run('MATCH (entity1:person) , (entity2:univer{name:entity1.univer}) CREATE (entity1)-[:学校]->(entity2)')
 # graph.run('MATCH (entity1:person) , (entity2:level{name:entity1.level}) CREATE (entity1)-[:学位]->(entity2)')
 if __name__ == '__main__':
-    neo4j_build()
+    pass
+    #neo4j_build()
     #reduce()
