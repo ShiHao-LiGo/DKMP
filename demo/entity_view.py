@@ -96,14 +96,16 @@ def search_relation(request):
     if (request.GET):
         db = neo_con
         entity1 = request.GET['entity1_text']
+        print(entity1)
         relation = request.GET['relation_name_text']
         entity2 = request.GET['entity2_text']
-        relation = relation.lower()
         searchResult = {}
         # 若只输入entity1,则输出与entity1有直接关系的实体和关系
         if (len(entity1) != 0 and len(relation) == 0 and len(entity2) == 0):
             searchResult = db.findRelationByEntity(entity1)
             searchResult = sortDict(searchResult)
+            # if searchResult == None:
+            #     return render(request, "relation.html", {'ctx': ctx})
             kk = json.dumps(searchResult, ensure_ascii=False)
             tt = json.loads(kk)
             # print("11111111111111111")
@@ -130,18 +132,33 @@ def search_relation(request):
                 return render(request, 'relation.html', {'searchResult': json.dumps(tt, ensure_ascii=False)})
         # 若输入entity1和relation，则输出与entity1具有relation关系的其他实体
         if (len(entity1) != 0 and len(relation) != 0 and len(entity2) == 0):
+            print(entity1)
+            print(relation)
             searchResult = db.findOtherEntities(entity1, relation)
             searchResult = sortDict(searchResult)
-            print("开始啦")
-            print(searchResult)
+            kk = json.dumps(searchResult, ensure_ascii=False)
+            tt = json.loads(kk)
+            # print("11111111111111111")
+            for i in range(len(searchResult)):
+                # print(tt[i]["rel"])
+                tt[i]["rel"]["type"] = list(searchResult[i]['rel'].types())[0]
             if (len(searchResult) > 0):
-                return render(request, 'relation.html', {'searchResult': json.dumps(searchResult, ensure_ascii=False)})
+                return render(request, 'relation.html', {'searchResult': json.dumps(tt, ensure_ascii=False)})
         # 若输入entity2和relation，则输出与entity2具有relation关系的其他实体
         if (len(entity2) != 0 and len(relation) != 0 and len(entity1) == 0):
             searchResult = db.findOtherEntities2(entity2, relation)
+            print(entity2, relation)
             searchResult = sortDict(searchResult)
+            print(searchResult)
+            kk = json.dumps(searchResult, ensure_ascii=False)
+            tt = json.loads(kk)
+            # print("11111111111111111")
+            for i in range(len(searchResult)):
+                # print(tt[i]["rel"])
+                tt[i]["rel"]["type"] = list(searchResult[i]['rel'].types())[0]
+            print(tt)
             if (len(searchResult) > 0):
-                return render(request, 'relation.html', {'searchResult': json.dumps(searchResult, ensure_ascii=False)})
+                return render(request, 'relation.html', {'searchResult': json.dumps(tt, ensure_ascii=False)})
         # 若输入entity1和entity2,则输出entity1和entity2之间的最短路径
         if (len(entity1) != 0 and len(relation) == 0 and len(entity2) != 0):
             searchResult = db.findRelationByEntities(entity1, entity2)

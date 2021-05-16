@@ -185,6 +185,9 @@ def create_108746():
     graph.create(Rel18)
 # graph.run('MATCH (n:huhu) WITH n.name AS name, COLLECT(n) AS nodelist, COUNT(*) AS count WHERE count > 1 CALL '
 #           'apoc.refactor.mergeNodes(nodelist) YIELD node RETURN node')
+def add_attr():
+    graph = Graph("http://localhost:7474", username="neo4j", password='123456789')
+    graph.run('MATCH p=()-[r:Priority]->() SET r={name:"Priority"}')
 def reduce():
     graph = Graph("http://localhost:7474", username="neo4j", password='123456789')
     #删除重复结点
@@ -212,6 +215,7 @@ def reduce():
 # graph.run('MATCH (entity1:person) , (entity2:univer{name:entity1.univer}) CREATE (entity1)-[:学校]->(entity2)')
 # graph.run('MATCH (entity1:person) , (entity2:level{name:entity1.level}) CREATE (entity1)-[:学位]->(entity2)')
 if __name__ == '__main__':
-    create_108746()
+    pass
+    #create_108746()
     #neo4j_build()
     #reduce()

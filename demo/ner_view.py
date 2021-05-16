@@ -16,22 +16,29 @@ def ner_post(request):
         # 获取输入文本
         key = request.POST['user_text']
         # print(key)
+        an=[]
+        # 所有字符转化为小写
         key_1 = key.casefold()
+        #print(key_1)
         key_1 = key_1.split(" ")
+        #print(key_1)
         key_1.append(['===', None])
+        #print(key_1)
         # print(key_1)
-        label = domain_ner_dict#实体列表
-        pair=[]
+        label = domain_ner_dict  # 实体列表
+        pair = []
         NE_list = get_NE(key)
         text = ""
         for pair in NE_list:
             if pair[1] == 0:
-                text += pair[0]+" "
+                text += pair[0] + " "
                 continue
             # if pair[0].containsmultiplewords():
             #     text += "["+"<a href=#>" + pair[0] + "</a>" +"]"+" "
-            text += "["+"<a href=#>" + pair[0] + "</a>" +"]"+" "
+            an.append(pair[0])
+            text += "[" + "<a href=#>" + pair[0] + "</a>" + "]" + " "
         # print(text)
+        print(an)
         tokens = nltk.word_tokenize(key)
         output = nltk.pos_tag(tokens)
 

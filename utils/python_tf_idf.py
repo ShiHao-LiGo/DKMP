@@ -124,8 +124,8 @@ def tfidf(word, count, count_list):
 import math
 
 def jisuan():
-    for i, count in enumerate(countlist[:]):
-        print(i)
+    for i, count in enumerate(countlist[:2]):
+        print(count)
         ans = []
         #print("Top words in document {}".format(i + 1))
         scores = {word: tfidf(word, count, countlist) for word in count}

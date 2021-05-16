@@ -62,21 +62,23 @@ $(document).ready(function(){
             dragDrop: {},
             uploadFile: {
                 url: "/up/",
-                data: {},
+                data: {
+                },
                 type: 'POST',
                 enctype: 'multipart/form-data',
-                beforeSend: function(){},
-                success: function(data, el){
-                    // alert("成功");
+                 datatype:'text',
+                beforeSend: function(){
+                },
+                success: function(response, el){
                     var parent = el.find(".jFiler-jProgressBar").parent();
-                    // el.find(".wode").append("<p>我在这里</p>");
+                    el.find(".wode").append("<p>我在这里</p>");
                     el.find(".jFiler-jProgressBar").fadeOut("slow", function(){
                         $("<div class=\"jFiler-item-others text-success\"><i class=\"icon-jfi-check-circle\"></i> Success</div>").hide().appendTo(parent).fadeIn("slow");
-                        $("#weizhi").text(data);
+                        $("#weizhi").text(response);
                     });
 
 
-                    console.log(data);
+                    console.log("你好");
 
                 },
                 error: function(el){

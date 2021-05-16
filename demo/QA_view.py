@@ -54,9 +54,13 @@ def deal_type(BugID):
     ret_dict = {'bid': BugID}
     relations = []
     db = neo_con
+    print(BugID)
     answer = db.matchItembyname(BugID)
+    print(answer)
     answer = json.dumps(answer, ensure_ascii=False)
     answer = json.loads(answer)
+    print("我来了")
+    print(answer)
     ret_dict['answer'] = answer[0]['n'].get('Type')
     entityRelation = db.getEntityRelationbyEntity(BugID)
     entityRelation_s = sortDict(entityRelation)
@@ -254,6 +258,7 @@ def q_a(request):
             ret_dict['bid'] = BugID
             if 'description' in splited or '描述' in splited or '原因' in splited or '复现' in splited or 'describe' in splited or 'symptom' in splited or 'symptons' in splited or '症状' in splited or '原因' in splited or '怎么' in splited or '如何' in splited or 'how' in splited or 'symptom' in splited or 'symptons' in splited or '症状' in splited or '原因' in splited or '怎么' in splited or '如何' in splited or choice == 1:
                 ret_dict = deal_desc(BugID)
+                print(ret_dict)
             elif 'type' in splited or '类型' in splited or choice == 0:
                 ret_dict = deal_type(BugID)
             elif 'priority' in splited or '优先' in splited or choice == 3:

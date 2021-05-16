@@ -33,7 +33,7 @@ print('--Load Domain Dictionary...--!')
 
 def get_NE(text):
     # 读取thulac，neo4j，分词
-    db = neo_con
+    # db = neo_con
     # 分词
     key_1 = nltk.word_tokenize(text)
     key_1.append('===')  # 末尾加个不合法的，后面好写

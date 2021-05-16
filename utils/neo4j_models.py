@@ -18,8 +18,9 @@ class Neo4j:
 
     # 根据结点的title属性title返回结点
     def matchItembyname(self, value):
-        sql = "MATCH (n:BUG_ID { name: '" + str(value) + "' }) return n;"
+        sql = "MATCH (n:Bud_Id { name: '" + str(value) + "' }) return n;"
         answer = self.graph.run(sql).data()
+        print(answer)
         return answer
 
     # [{'rel': Type(Node('BUG_ID', Component='Composer', Priority='Not set', Product='SeaMOnkey', Serverity='critical',
@@ -112,6 +113,7 @@ class Neo4j:
     def findOtherEntities(self, entity, relation):
         answer = self.graph.run("MATCH (n1 {name:\"" + str(entity) + "\"})- [rel {name:\"" + str(
             relation) + "\"}] -> (n2) RETURN n1,rel,n2").data()
+        print(answer)
         # if(answer is None):
         #	answer = self.graph.run("MATCH (n1:NewNode {title:\"" + entity + "\"})- [rel:RELATION {type:\""+relation+"\"}] -> (n2) RETURN n1,rel,n2" ).data()
 
@@ -119,7 +121,7 @@ class Neo4j:
 
     # 根据entity2和关系查找enitty1
     def findOtherEntities2(self, entity, relation):
-        answer = self.graph.run("MATCH (n1)- [rel {type:\"" + str(relation) + "\"}] -> (n2 {title:\"" + str(
+        answer = self.graph.run("MATCH (n1)- [rel {name:\"" + str(relation) + "\"}] -> (n2 {name:\"" + str(
             entity) + "\"}) RETURN n1,rel,n2").data()
         # if(answer is None):
         #	answer = self.graph.run("MATCH (n1)- [rel:RELATION {type:\""+relation+"\"}] -> (n2:NewNode {title:\"" + entity + "\"}) RETURN n1,rel,n2" ).data()
