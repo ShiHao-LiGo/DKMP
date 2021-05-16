@@ -1,1 +1,1 @@
-we are the word
+When only the search box is enabled in Firefox newtab, the Firefox logo is no longer displayed

@@ -2,210 +2,79 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39cc2001-ebda-48af-8239-d99f3ba203fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/demo/temp/03891407-48e1-43da-badf-984ab920b12e_2021-05-16-09-47-37_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/0de16fe5-8c18-45c4-976a-31249eff58d5_2021-05-16-09-50-14_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/0fb25601-5f17-4a25-9ba1-4ece6b853aee_2021-05-16-09-43-10_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/130ff1d4-7b68-4c3f-b169-1a14a3629898_2021-05-16-10-18-46_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/1554b918-4ff5-4acb-91f9-61dfb1c47062_2021-05-16-09-21-30_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/164513b9-ba63-4b88-8644-75b309293ee4_2021-05-16-15-47-23_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/1a2b4210-21fc-4e99-97fd-c33fa78735ae_2021-05-16-16-19-14_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/1abf3f80-ea89-426d-81f3-dcf0090edcbd_2021-05-16-08-58-05_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/1ca42d2c-db39-48c3-9a73-a736ae937160_2021-05-16-08-59-15_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/1d7994ad-a543-4689-9e98-e01697e874ce_2021-05-16-15-47-30_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/22d2f887-41cc-410b-bcc7-90d51a4f397c_2021-05-16-09-48-25_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/2433223e-0a46-4bf2-8512-701cf3b19cdf_2021-05-16-10-18-26_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/26b07580-83b7-404a-939c-c7c51f5ee71c_2021-05-16-15-50-56_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/272c021c-3205-4a7b-8906-5988061781c8_2021-05-16-09-49-02_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/28819aa2-ab18-4b4b-a449-1136edf671be_2021-05-16-09-43-41_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/3af5c21f-4121-40c9-abc3-294c44c114d9_2021-05-16-09-06-43_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/3d7af923-f2d5-41f5-b933-1a6da51e8c8c_2021-05-16-09-27-19_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/3d878f2f-9d95-449f-b361-e44edabf5d2f_2021-05-16-09-29-22_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/410bf957-d70b-420e-b642-caf1af22041d_2021-05-16-09-51-42_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/4153185a-7321-46ae-8fe3-53f08921e08f_2021-05-16-15-46-08_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/44a22cfd-d296-4f72-9682-0d3340116051_2021-05-16-08-59-47_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/46451e06-0c56-4ba4-ae44-fca2878c3ce7_2021-05-16-09-41-06_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/47cd1176-f838-41d7-ba0a-716d05ccc402_2021-05-16-09-21-47_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/4a2ef605-c7db-4b93-944b-5bcf02ad5b3a_2021-05-16-08-46-18_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/50a7d3c5-0834-4a8e-88b2-6b7aef051c75_2021-05-16-09-49-27_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/5a560854-9952-4454-bbb4-0519a2ceb001_2021-05-16-08-55-14_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/5b21e07c-4817-4a38-91c7-9129ced64e1a_2021-05-16-09-53-47_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/5b9ec872-166b-4f5b-92aa-2332c41388cd_2021-05-16-08-39-59_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/5d8ab92c-a992-4545-9fd7-ef5afc61bee4_2021-05-16-09-05-46_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/602aa1d1-af01-4541-a043-ce3644237b9f_2021-05-16-16-13-18_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/62c0c3e6-089e-4f24-b0ba-e4f45dc1bdc3_2021-05-16-09-21-10_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/64a46f89-9418-4372-8116-54bdda7c21a9_2021-05-16-08-48-14_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/6589255d-d7a2-40a0-97e3-940915608d09_2021-05-16-16-23-04_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/66abe1c8-76b8-4fd9-b6ca-ef00ec95eb09_2021-05-16-09-02-08_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/67fdb08b-af9d-45ac-942c-d8d33b773e16_2021-05-16-10-44-59_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/68e179ab-84f6-45de-b393-bb24d1d583e5_2021-05-16-08-39-39_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/68f5e57b-8602-4417-9e79-69cc1d77988c_2021-05-16-08-55-40_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/6a028a2b-7947-4acd-9971-3631f2908ade_2021-05-16-09-03-02_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/6ba349bf-bcd1-44d4-bf30-1be756e11be7_2021-05-16-16-06-34_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/72df0719-111f-4298-a362-28550955ea1a_2021-05-16-15-49-39_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/75254b3f-a4ef-4294-9cc7-658223ffd05d_2021-05-16-09-20-39_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/78f442fa-9a0c-4155-8c92-5c38adf053a3_2021-05-16-09-29-53_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/a153c74d-74e2-4869-8ccd-108ebc45009d_2021-05-16-16-14-47_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/a46bf971-a412-4595-a44f-ad5a64d6abb1_2021-05-16-09-51-20_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/a5a10bfd-860f-41b1-8358-7d59d5bf26c8_2021-05-16-09-10-03_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/a65e58e6-25e8-4bca-8089-2043cedd0677_2021-05-16-09-22-50_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/a7141c52-6d92-4a64-9526-da53ac08548a_2021-05-16-09-45-28_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/ad3bb823-cd05-4ba1-86ee-f5919dd5058c_2021-05-16-09-25-34_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/b52681e2-6f17-4214-80f5-f5a800b013a0_2021-05-16-09-45-07_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/b5c5d9f8-1606-494c-8bf5-f3d58fda80fb_2021-05-16-08-58-38_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/b96427fc-9139-4df5-a5f1-b262b26f8a86_2021-05-16-15-48-19_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/ba5a527c-bb4b-4d5e-8971-fb2b98766a2c_2021-05-16-15-49-32_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/c59cba31-6ace-43f3-b91c-435136f52e28_2021-05-16-16-13-52_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/c5fab484-26ef-4eda-a6ae-b9242fa99d6c_2021-05-16-09-40-05_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/c6f207c1-30ad-40f9-892b-df2fc591911d_2021-05-16-09-25-20_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/c7c4f942-d410-4a54-9929-46c8b1980cd5_2021-05-16-08-40-45_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/c9eafe99-7e6e-406c-9b77-c086553e0cbf_2021-05-16-09-00-40_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/cba8115b-cfd9-4bd6-924e-41b3a77b4a23_2021-05-16-16-12-44_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/ce72e81c-cc9f-4797-9e7b-fe63062d0981_2021-05-16-08-47-41_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/dbe8b567-0649-48c6-ae2e-e67835826d5e_2021-05-16-09-43-01_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/de93c0d9-d4c1-438f-a8a4-42e3ffae466a_2021-05-16-09-27-52_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/e0690d73-e9e0-4737-943a-72bad9e1d18c_2021-05-16-09-28-36_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/e2f05424-496b-441d-8ebe-dd3bf6240866_2021-05-16-09-49-42_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/e3aac091-5f6c-4460-892c-30eff4a70527_2021-05-16-15-41-25_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/f6460215-d246-4a32-b5c4-5574dccb7ea4_2021-05-16-08-39-11_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/f919d331-6783-4e24-b329-ad7baa2a535c_2021-05-16-09-29-02_test.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/txt/153.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/txt/789.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/bug.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/bug_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/hullabaloo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/up_load.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/dealed_words" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/stop_words.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/text.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/temp/txt/7456.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/QA_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/QA_view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/annotation.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/up_load.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/entity_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/entity_view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/ner_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/ner_view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/relation_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/relation_view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/036aa300-ef22-4eef-a71b-d85469b83529_2021-04-28-12-26-31_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/0474e18b-e5fb-4421-8741-0b12c62d9b3a_2021-04-28-00-44-44_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/0542792a-b04c-4eee-bf4c-59a8a9f74852_2021-04-28-00-57-11_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/059dce68-5274-417c-a90d-4878312a092d_2021-04-28-12-25-52_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/0782749a-fff6-40c4-b635-49971a66b9ae_2021-04-10-21-51-50_Desktop.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/092b3950-5979-4a66-ae25-ab7e6554a210_2021-04-28-12-33-01_ceshi.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/09d1f8a8-c77a-4caa-b982-0898ef0bfa42_2021-04-29-01-44-22_154.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/0a041de0-4750-4bfc-9ebc-000a819a7a3c_2021-04-29-11-44-53_154.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/10886055-4b7f-4fb4-aa19-0c30cc0bcfb8_2021-04-27-23-53-46_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/149888b1-1109-4b7b-8dcb-50cc901c919b_2021-04-28-12-40-51_154.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/15f311ac-b808-4182-a973-bd8a3303465a_2021-04-28-00-07-34_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/16424fb6-aa85-45e2-9e43-3a7f4c371faa_2021-04-14-18-32-48_Desktop.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/188ffb0d-7051-446f-8a53-3ee45d23a135_2021-04-28-00-23-25_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/1a37c273-9f58-4279-a058-5f442e25ec82_2021-04-10-21-51-15_Desktop.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/1e2857dd-dc60-41ba-9ec3-2d62c8a04ceb_2021-04-27-20-33-57_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/27633ae4-086d-4bbd-8b24-cfd741d2e124_2021-04-28-00-48-40_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/2ac66c92-b550-49ed-8642-c69a5bc63abd_2021-04-10-21-45-12_Desktop.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/32568f90-3def-4233-ae23-516c3ded1980_2021-04-28-12-32-57_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/35b523d9-6e07-42e1-9b95-4bf2576873b6_2021-04-27-20-15-18_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/36d9ed09-531d-42d4-8872-dd37df5eb353_2021-04-10-21-49-11_Desktop.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/36de6fa0-6def-4d5b-baf3-0eedd375703a_2021-04-10-21-51-04_Desktop.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/3a40cf11-737b-4f7d-90c4-1772aff2f321_2021-04-30-21-37-25_154.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/3e7a1293-9475-4526-8546-719330f7df5e_2021-04-28-12-30-00_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/41a6f7f3-f01d-4da3-8916-42b8d892b04c_2021-04-29-09-26-22_154.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/42a89a45-5691-4804-b97b-b79de32c441c_2021-04-30-21-36-54_154.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/43140466-c6e1-47f8-a0c5-e7b8298b21da_2021-04-28-00-58-49_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/43b9e644-a0ab-4571-965b-74cd5b1871b5_2021-04-28-00-35-57_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/451a82c7-4450-48f0-8454-1e81cca186d1_2021-04-27-20-35-48_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/4736930b-6dde-4629-b53b-bd977e99a14b_2021-04-27-20-11-31_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/4de5c2dd-2d88-48de-9f52-c42cfa289e13_2021-04-28-12-35-40_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/51a15903-7576-4d53-9bf1-e73f6635ab17_2021-04-27-20-22-17_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/53ab23b1-ae45-4deb-9635-2e8935f35976_2021-04-28-12-18-51_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/551c968a-db27-4577-8ef7-6b07a287af6c_2021-04-28-13-34-49_154.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/558653ca-a94b-4c85-aa67-095239196937_2021-04-21-14-57-48_ceshi.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/5b4b81ad-d4ef-4cfc-8f86-00895bdea26b_2021-04-28-17-13-54_154.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/5fc82668-a7ec-4690-8b71-4a00a2a1dd32_2021-04-28-00-59-56_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/60d5f38b-6ebf-4ea7-bcf4-815628884934_2021-04-27-23-59-36_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/6c491d8c-750c-4b3d-9528-2e9795547cdd_2021-04-10-21-42-58_Desktop.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/6c50c3f1-fb58-4d70-9c0d-d30cdc649bee_2021-04-27-23-50-14_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/6fd6e096-0d06-49f7-95f7-f1bf79b4285a_2021-04-28-00-45-26_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/748da938-1400-4eb6-ab86-81de1fc7d7db_2021-04-28-00-01-59_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/76a94f98-7119-4068-b6de-337bdd7d3f09_2021-05-01-10-34-28_关系图.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/7f9d74d9-3cda-47c8-ab6f-48494e945c0e_2021-04-30-21-37-10_154.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/89647924-ac29-46e3-8652-d99af6bd525c_2021-04-28-13-38-52_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/964fbbf5-5b62-46e1-bac1-c3e356c51a5a_2021-04-10-21-47-24_Desktop.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/9b86ea3b-8d3d-4c73-8484-c8160e648667_2021-04-28-00-22-52_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/9bbab9f0-1ab3-464b-a6bf-b543a2422405_2021-04-28-12-26-37_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/9fa164ac-00c0-48bb-9c27-695c05bc7699_2021-04-28-13-35-14_154.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/a47f8b5a-f354-4abf-a900-79d587d86408_2021-04-27-20-23-04_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/a4a246b1-3b37-400d-8ac5-51b024bc1401_2021-04-28-00-46-13_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/a5208256-268e-45e1-bd05-06180be50da8_2021-04-10-21-41-25_Desktop.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/a692680d-8e9b-45c8-bd08-f63b9b06de37_2021-04-27-23-50-56_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/a6c60e66-89d4-48cf-813c-3f06f07ca109_2021-04-28-00-18-51_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/acc09c5d-09e5-4246-ae45-a18d93d6c270_2021-04-28-00-08-56_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/ad7b6d3c-0533-4ff5-a744-1f1471ed3d28_2021-04-27-23-55-35_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/af62a10b-f2d3-488e-bc3b-2c121c6fb5b4_2021-04-28-00-19-52_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/b1c9d08a-b99e-4197-ab6d-93777081d493_2021-04-27-20-11-49_计划.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/b882a9b9-fa42-4f05-9166-605556522d62_2021-04-28-00-35-24_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/b8e2422e-66fa-47d8-8cd4-af42acd4a3a7_2021-04-28-00-44-06_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/ba384f89-c5b7-45a3-8c7e-2c2b067fae31_2021-04-28-00-01-21_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/ba5735be-586d-4600-9c04-1cf3ef377954_2021-04-28-12-35-27_154.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/bda4ca00-89cc-48bd-8c0e-73c29c20edad_2021-04-28-13-35-50_154.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/bfa96cd8-cda1-4646-a45f-db963f456255_2021-04-29-01-44-27_154.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/c274fd81-940b-41a2-8b0f-66e904988e16_2021-04-28-12-33-28_154.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/c3841932-7bf5-4960-a5b0-408588521940_2021-04-28-12-27-10_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/c54702e4-526b-465d-8af6-af51e5448700_2021-04-29-01-42-43_154.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/c76c5224-09ad-4300-81e5-8e72732f5e37_2021-04-29-10-00-37_154.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/ca0800e9-3b22-4340-b43f-d079d2c53466_2021-04-27-23-58-35_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/ca14db52-8c31-46b7-8357-127fe94f9580_2021-04-28-00-55-59_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/ccdd735c-bd44-4069-b987-596e6890892a_2021-04-29-11-47-00_154.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/d04822ca-3650-43ea-a61f-68f1d815eaf1_2021-04-30-21-37-35_154.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/d1100a4e-0d1d-47d6-a52f-cec091bde0ca_2021-04-27-23-56-20_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/d44ea630-e371-4ff5-9545-825c1aae6734_2021-04-28-12-28-52_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/d86afc5e-d7d9-41e8-837c-2fca621b6d62_2021-04-10-21-54-27_Desktop.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/d87054f6-a53c-454c-90c0-4cab6531f4be_2021-04-10-21-42-46_Desktop.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/da0baff6-4038-4ec1-b834-af736be3ebc1_2021-04-28-01-00-56_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/dafc450f-af46-4dce-96fd-b44a10c520eb_2021-04-28-12-32-40_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/dc84df79-c487-427b-b075-775ca4c8316e_2021-04-28-00-37-00_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/de5c6d46-1362-418b-986e-d8b5efad88bd_2021-04-29-11-11-22_154.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/e03df5bf-9bfc-44d1-990a-3e8d6f7aa560_2021-04-27-20-09-41_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/e14a2134-78ed-4164-b027-04cfaeaafa62_2021-04-28-12-48-20_154.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/e2413d31-10fc-4ac3-82e2-d64ad7e0703b_2021-05-01-10-35-06_VID_20210501_103453.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/e512f13e-148b-4f32-8ae9-0bdeda184c2d_2021-04-27-20-07-44_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/e644f02f-a8f0-4b04-97fc-498d3a8a6cd6_2021-04-28-12-31-01_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/e9d4ecbb-22f0-49bb-bbb4-2a0e66520aa6_2021-04-10-21-58-01_Desktop.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/eac9baea-0ce9-4901-9776-e470f9a5d677_2021-04-27-20-28-26_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/eaf677e1-3783-4012-aaa2-ded55239aa3f_2021-04-28-00-37-35_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/ece66b7d-47b6-4dc3-9a84-f2b3d7a6a023_2021-04-30-21-36-19_154.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/edbef861-c897-4e2d-8ee3-98b568c18699_2021-04-28-00-30-55_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/efa66501-c1d5-473b-a9ef-6e428229cfdf_2021-04-28-01-00-42_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/f1890d0d-8883-4012-929f-6fbf05020acf_2021-04-27-23-51-25_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/f1f983b7-ae2b-4474-9665-4a86f7d44221_2021-04-10-22-13-36_Desktop.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/f333c5bf-cd17-460a-a718-a75f564ff275_2021-04-28-12-32-31_ceshi.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/f542ac32-d265-4745-af36-02a7cf794ca4_2021-04-27-20-50-48_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/f6821c24-9fe7-4d74-9f41-2fe96991c685_2021-04-27-20-07-14_456.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/f84009bb-e9ee-4ebd-b7a0-a1d941ab8a84_2021-04-29-01-44-14_154.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/fba555fc-f801-41e0-9cc0-55eee952bbca_2021-04-28-13-34-20_154.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/txt/5656.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/txt/7854.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/txt/856.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/txt/888.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/txt/nishishei.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/txt/─π╩╟╦¡.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/txt/╨┬╜¿╬─▒╛╬─╡╡ (2) - ╕▒▒╛.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/txt/╨┬╜¿╬─▒╛╬─╡╡ (3) - ╕▒▒╛.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/txt/╨┬╜¿╬─▒╛╬─╡╡ (4) - ╕▒▒╛.txt" beforeDir="false" afterPath="$PROJECT_DIR$/utils/auto_create.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/txt/╨┬╜¿╬─▒╛╬─╡╡ - ╕▒▒╛.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/up_views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/jquery.filer.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/jquery.filer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/jquery.filer.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/jquery.filer.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/03891407-48e1-43da-badf-984ab920b12e_2021-05-16-09-47-37_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/0de16fe5-8c18-45c4-976a-31249eff58d5_2021-05-16-09-50-14_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/0fb25601-5f17-4a25-9ba1-4ece6b853aee_2021-05-16-09-43-10_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/130ff1d4-7b68-4c3f-b169-1a14a3629898_2021-05-16-10-18-46_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/1554b918-4ff5-4acb-91f9-61dfb1c47062_2021-05-16-09-21-30_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/164513b9-ba63-4b88-8644-75b309293ee4_2021-05-16-15-47-23_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/1a2b4210-21fc-4e99-97fd-c33fa78735ae_2021-05-16-16-19-14_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/1abf3f80-ea89-426d-81f3-dcf0090edcbd_2021-05-16-08-58-05_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/1ca42d2c-db39-48c3-9a73-a736ae937160_2021-05-16-08-59-15_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/1d7994ad-a543-4689-9e98-e01697e874ce_2021-05-16-15-47-30_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/22d2f887-41cc-410b-bcc7-90d51a4f397c_2021-05-16-09-48-25_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/2433223e-0a46-4bf2-8512-701cf3b19cdf_2021-05-16-10-18-26_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/26b07580-83b7-404a-939c-c7c51f5ee71c_2021-05-16-15-50-56_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/272c021c-3205-4a7b-8906-5988061781c8_2021-05-16-09-49-02_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/28819aa2-ab18-4b4b-a449-1136edf671be_2021-05-16-09-43-41_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/3af5c21f-4121-40c9-abc3-294c44c114d9_2021-05-16-09-06-43_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/3d7af923-f2d5-41f5-b933-1a6da51e8c8c_2021-05-16-09-27-19_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/3d878f2f-9d95-449f-b361-e44edabf5d2f_2021-05-16-09-29-22_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/410bf957-d70b-420e-b642-caf1af22041d_2021-05-16-09-51-42_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/4153185a-7321-46ae-8fe3-53f08921e08f_2021-05-16-15-46-08_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/44a22cfd-d296-4f72-9682-0d3340116051_2021-05-16-08-59-47_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/46451e06-0c56-4ba4-ae44-fca2878c3ce7_2021-05-16-09-41-06_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/47cd1176-f838-41d7-ba0a-716d05ccc402_2021-05-16-09-21-47_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/4a2ef605-c7db-4b93-944b-5bcf02ad5b3a_2021-05-16-08-46-18_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/50a7d3c5-0834-4a8e-88b2-6b7aef051c75_2021-05-16-09-49-27_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/5a560854-9952-4454-bbb4-0519a2ceb001_2021-05-16-08-55-14_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/5b21e07c-4817-4a38-91c7-9129ced64e1a_2021-05-16-09-53-47_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/5b9ec872-166b-4f5b-92aa-2332c41388cd_2021-05-16-08-39-59_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/5d8ab92c-a992-4545-9fd7-ef5afc61bee4_2021-05-16-09-05-46_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/602aa1d1-af01-4541-a043-ce3644237b9f_2021-05-16-16-13-18_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/62c0c3e6-089e-4f24-b0ba-e4f45dc1bdc3_2021-05-16-09-21-10_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/64a46f89-9418-4372-8116-54bdda7c21a9_2021-05-16-08-48-14_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/6589255d-d7a2-40a0-97e3-940915608d09_2021-05-16-16-23-04_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/66abe1c8-76b8-4fd9-b6ca-ef00ec95eb09_2021-05-16-09-02-08_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/67fdb08b-af9d-45ac-942c-d8d33b773e16_2021-05-16-10-44-59_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/68e179ab-84f6-45de-b393-bb24d1d583e5_2021-05-16-08-39-39_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/68f5e57b-8602-4417-9e79-69cc1d77988c_2021-05-16-08-55-40_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/6a028a2b-7947-4acd-9971-3631f2908ade_2021-05-16-09-03-02_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/6ba349bf-bcd1-44d4-bf30-1be756e11be7_2021-05-16-16-06-34_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/72df0719-111f-4298-a362-28550955ea1a_2021-05-16-15-49-39_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/75254b3f-a4ef-4294-9cc7-658223ffd05d_2021-05-16-09-20-39_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/78f442fa-9a0c-4155-8c92-5c38adf053a3_2021-05-16-09-29-53_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/a153c74d-74e2-4869-8ccd-108ebc45009d_2021-05-16-16-14-47_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/a46bf971-a412-4595-a44f-ad5a64d6abb1_2021-05-16-09-51-20_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/a5a10bfd-860f-41b1-8358-7d59d5bf26c8_2021-05-16-09-10-03_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/a65e58e6-25e8-4bca-8089-2043cedd0677_2021-05-16-09-22-50_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/a7141c52-6d92-4a64-9526-da53ac08548a_2021-05-16-09-45-28_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/ad3bb823-cd05-4ba1-86ee-f5919dd5058c_2021-05-16-09-25-34_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/b52681e2-6f17-4214-80f5-f5a800b013a0_2021-05-16-09-45-07_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/b5c5d9f8-1606-494c-8bf5-f3d58fda80fb_2021-05-16-08-58-38_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/b96427fc-9139-4df5-a5f1-b262b26f8a86_2021-05-16-15-48-19_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/ba5a527c-bb4b-4d5e-8971-fb2b98766a2c_2021-05-16-15-49-32_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/c59cba31-6ace-43f3-b91c-435136f52e28_2021-05-16-16-13-52_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/c5fab484-26ef-4eda-a6ae-b9242fa99d6c_2021-05-16-09-40-05_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/c6f207c1-30ad-40f9-892b-df2fc591911d_2021-05-16-09-25-20_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/c7c4f942-d410-4a54-9929-46c8b1980cd5_2021-05-16-08-40-45_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/c9eafe99-7e6e-406c-9b77-c086553e0cbf_2021-05-16-09-00-40_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/cba8115b-cfd9-4bd6-924e-41b3a77b4a23_2021-05-16-16-12-44_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/ce72e81c-cc9f-4797-9e7b-fe63062d0981_2021-05-16-08-47-41_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/dbe8b567-0649-48c6-ae2e-e67835826d5e_2021-05-16-09-43-01_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/de93c0d9-d4c1-438f-a8a4-42e3ffae466a_2021-05-16-09-27-52_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/e0690d73-e9e0-4737-943a-72bad9e1d18c_2021-05-16-09-28-36_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/e2f05424-496b-441d-8ebe-dd3bf6240866_2021-05-16-09-49-42_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/e3aac091-5f6c-4460-892c-30eff4a70527_2021-05-16-15-41-25_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/f6460215-d246-4a32-b5c4-5574dccb7ea4_2021-05-16-08-39-11_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/f919d331-6783-4e24-b329-ad7baa2a535c_2021-05-16-09-29-02_test.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/txt/153.txt" beforeDir="false" afterPath="$PROJECT_DIR$/demo/temp/txt/153.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/txt/789.txt" beforeDir="false" afterPath="$PROJECT_DIR$/demo/temp/txt/789.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/up_load.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/up_load.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/annotate.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/annotate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/over_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/over_view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/question_answering.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/question_answering.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/relation.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/relation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/create1.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/create1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/neo4j_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/neo4j_models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/pre_load.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/pre_load.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/python_tf_idf.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/python_tf_idf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/auto_create.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/auto_create.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -304,7 +173,7 @@
       <recent name="G:\pythonlearn\mykg\static\img" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.auto_create">
+  <component name="RunManager" selected="Django Server.mykg">
     <configuration name="auto_create" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="mykg" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -524,6 +393,8 @@
       <workItem from="1620965392956" duration="11036000" />
       <workItem from="1620988854875" duration="23842000" />
       <workItem from="1621076525909" duration="50573000" />
+      <workItem from="1621153481024" duration="60000" />
+      <workItem from="1621156487102" duration="15758000" />
     </task>
     <task id="LOCAL-00001" summary="一些测试和优化">
       <created>1621043826372</created>
@@ -546,7 +417,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621071282520</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="自动导入的一些修改">
+      <created>1621153526757</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1621153526757</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -579,7 +457,8 @@
     <MESSAGE value="一些测试和优化" />
     <MESSAGE value="neo4j的导入" />
     <MESSAGE value="前端card框和提示" />
-    <option name="LAST_COMMIT_MESSAGE" value="前端card框和提示" />
+    <MESSAGE value="自动导入的一些修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="自动导入的一些修改" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -603,7 +482,7 @@
     <SUITE FILE_PATH="coverage/mykg$json2csv.coverage" NAME="json2csv Coverage Results" MODIFIED="1615880691675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/mykg$csv2mysql.coverage" NAME="csv2mysql Coverage Results" MODIFIED="1620666264127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/mykg$stop_word_ana.coverage" NAME="stop_word_ana Coverage Results" MODIFIED="1620884040147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/mykg$auto_create.coverage" NAME="auto_create Coverage Results" MODIFIED="1621150002706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/mykg$auto_create.coverage" NAME="auto_create Coverage Results" MODIFIED="1621168431324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/mykg$pre_load.coverage" NAME="pre_load Coverage Results" MODIFIED="1615896260597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/mykg$test_list.coverage" NAME="test_list Coverage Results" MODIFIED="1620979799506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/mykg$LDA_e.coverage" NAME="LDA_e Coverage Results" MODIFIED="1620918778451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />

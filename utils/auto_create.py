@@ -60,7 +60,7 @@ def get_NE(text):
 # 读取现有语料库
 def read():
     # corpus.append(sentence)
-    with open("G:/pythonlearn/mykg/utils/text.csv", "r", encoding='utf-8') as f:
+    with open("text.csv", "r", encoding='utf-8') as f:
         reader = csv.reader(f)
         i = 1
         for row in reader:
@@ -70,6 +70,7 @@ def read():
             comment = row[9]
             new = tite + comment
             corpus.append(new)
+    return corpus
 
 
 # headers中添加上content-type这个参数，指定为json格式
@@ -146,6 +147,7 @@ def tongji():
     for i in range(len(word_list)):
         count = Counter(word_list[i])
         countlist.append(count)
+    return countlist
 
 
 # [输出]:
@@ -182,25 +184,29 @@ import math
 
 def jisuan(sentence):
     for i, count in enumerate(countlist[:2]):
-        # print(i)
+        print(i)
         ans = []
-        # print("Top words in document {}".format(i + 1))
+        print("Top words in document {}".format(i + 1))
         scores = {word: tfidf(word, count, countlist) for word in count}
         sorted_words = sorted(scores.items(), key=lambda x: x[1], reverse=True)
         # 从接口获取数据
         data = {}
         an = []
-        data["t"] = corpus[i]
+        data["t"] = sentence
         response = requests.post(url='http://localhost:5006/person/extract', headers=headers,
                                  data=json.dumps(data))  ## post的时候，将data字典形式的参数用json包转换成json格式。
+        print("1")
+        print(response)
         datas = json.loads(response.text)
+        print("1")
+        print(datas)
         for key in datas:
             if datas[key] != []:
                 an = an + datas[key]
         for word, score in sorted_words[:20]:
             ans.append(word)
         filePath = os.getcwd()
-        with open(filePath + '\\entity_datas.csv', 'r', encoding="utf-8") as csvfile:
+        with open('entity_datas.csv', 'r', encoding="utf-8") as csvfile:
             reader = csv.reader(csvfile, delimiter=',')
             for row in reader:
                 # 实体 类型代码
