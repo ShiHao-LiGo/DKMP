@@ -2,78 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39cc2001-ebda-48af-8239-d99f3ba203fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/demo/temp/txt/7456.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/temp/37338659-5469-44d7-ad12-9d8b7341d51c_2021-05-17-17-47-14_test (2).zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/temp/49d7da7e-ae2d-4169-94c1-3802b5860432_2021-05-17-15-18-19_123.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/temp/697d496b-4025-444c-838e-3feb2c70c3df_2021-05-17-15-22-30_123.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/temp/8abaee03-2e9b-451f-bd78-7e9eb6c11354_2021-05-17-15-12-56_test (2).zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/temp/8d277810-c1ba-4195-9db3-e0c918fab823_2021-05-17-17-05-25_test (2).zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/temp/93456fcb-084f-4cf4-b762-0f40a1d480df_2021-05-17-15-22-09_123.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/temp/9905a35a-cbb6-454a-9cfe-798b9b5e5675_2021-05-17-14-42-29_test (2).zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/temp/b2bed02f-6966-4e26-8fa3-50f6a70ca74c_2021-05-17-15-23-12_123.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/temp/bb5cf6ee-ef8c-42bf-9be3-bb1b5a1639fb_2021-05-17-18-42-51_test (2).zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/temp/c12b6680-1374-47d2-b266-f82e97d641d1_2021-05-17-14-40-14_test (2).zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mykg.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mykg.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sshConfigs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/03891407-48e1-43da-badf-984ab920b12e_2021-05-16-09-47-37_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/0de16fe5-8c18-45c4-976a-31249eff58d5_2021-05-16-09-50-14_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/0fb25601-5f17-4a25-9ba1-4ece6b853aee_2021-05-16-09-43-10_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/130ff1d4-7b68-4c3f-b169-1a14a3629898_2021-05-16-10-18-46_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/1554b918-4ff5-4acb-91f9-61dfb1c47062_2021-05-16-09-21-30_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/164513b9-ba63-4b88-8644-75b309293ee4_2021-05-16-15-47-23_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/1a2b4210-21fc-4e99-97fd-c33fa78735ae_2021-05-16-16-19-14_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/1abf3f80-ea89-426d-81f3-dcf0090edcbd_2021-05-16-08-58-05_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/1ca42d2c-db39-48c3-9a73-a736ae937160_2021-05-16-08-59-15_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/1d7994ad-a543-4689-9e98-e01697e874ce_2021-05-16-15-47-30_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/22d2f887-41cc-410b-bcc7-90d51a4f397c_2021-05-16-09-48-25_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/2433223e-0a46-4bf2-8512-701cf3b19cdf_2021-05-16-10-18-26_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/26b07580-83b7-404a-939c-c7c51f5ee71c_2021-05-16-15-50-56_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/272c021c-3205-4a7b-8906-5988061781c8_2021-05-16-09-49-02_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/28819aa2-ab18-4b4b-a449-1136edf671be_2021-05-16-09-43-41_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/3af5c21f-4121-40c9-abc3-294c44c114d9_2021-05-16-09-06-43_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/3d7af923-f2d5-41f5-b933-1a6da51e8c8c_2021-05-16-09-27-19_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/3d878f2f-9d95-449f-b361-e44edabf5d2f_2021-05-16-09-29-22_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/410bf957-d70b-420e-b642-caf1af22041d_2021-05-16-09-51-42_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/4153185a-7321-46ae-8fe3-53f08921e08f_2021-05-16-15-46-08_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/44a22cfd-d296-4f72-9682-0d3340116051_2021-05-16-08-59-47_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/46451e06-0c56-4ba4-ae44-fca2878c3ce7_2021-05-16-09-41-06_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/47cd1176-f838-41d7-ba0a-716d05ccc402_2021-05-16-09-21-47_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/4a2ef605-c7db-4b93-944b-5bcf02ad5b3a_2021-05-16-08-46-18_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/50a7d3c5-0834-4a8e-88b2-6b7aef051c75_2021-05-16-09-49-27_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/5a560854-9952-4454-bbb4-0519a2ceb001_2021-05-16-08-55-14_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/5b21e07c-4817-4a38-91c7-9129ced64e1a_2021-05-16-09-53-47_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/5b9ec872-166b-4f5b-92aa-2332c41388cd_2021-05-16-08-39-59_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/5d8ab92c-a992-4545-9fd7-ef5afc61bee4_2021-05-16-09-05-46_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/602aa1d1-af01-4541-a043-ce3644237b9f_2021-05-16-16-13-18_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/62c0c3e6-089e-4f24-b0ba-e4f45dc1bdc3_2021-05-16-09-21-10_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/64a46f89-9418-4372-8116-54bdda7c21a9_2021-05-16-08-48-14_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/6589255d-d7a2-40a0-97e3-940915608d09_2021-05-16-16-23-04_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/66abe1c8-76b8-4fd9-b6ca-ef00ec95eb09_2021-05-16-09-02-08_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/67fdb08b-af9d-45ac-942c-d8d33b773e16_2021-05-16-10-44-59_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/68e179ab-84f6-45de-b393-bb24d1d583e5_2021-05-16-08-39-39_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/68f5e57b-8602-4417-9e79-69cc1d77988c_2021-05-16-08-55-40_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/6a028a2b-7947-4acd-9971-3631f2908ade_2021-05-16-09-03-02_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/6ba349bf-bcd1-44d4-bf30-1be756e11be7_2021-05-16-16-06-34_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/72df0719-111f-4298-a362-28550955ea1a_2021-05-16-15-49-39_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/75254b3f-a4ef-4294-9cc7-658223ffd05d_2021-05-16-09-20-39_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/78f442fa-9a0c-4155-8c92-5c38adf053a3_2021-05-16-09-29-53_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/a153c74d-74e2-4869-8ccd-108ebc45009d_2021-05-16-16-14-47_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/a46bf971-a412-4595-a44f-ad5a64d6abb1_2021-05-16-09-51-20_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/a5a10bfd-860f-41b1-8358-7d59d5bf26c8_2021-05-16-09-10-03_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/a65e58e6-25e8-4bca-8089-2043cedd0677_2021-05-16-09-22-50_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/a7141c52-6d92-4a64-9526-da53ac08548a_2021-05-16-09-45-28_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/ad3bb823-cd05-4ba1-86ee-f5919dd5058c_2021-05-16-09-25-34_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/b52681e2-6f17-4214-80f5-f5a800b013a0_2021-05-16-09-45-07_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/b5c5d9f8-1606-494c-8bf5-f3d58fda80fb_2021-05-16-08-58-38_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/b96427fc-9139-4df5-a5f1-b262b26f8a86_2021-05-16-15-48-19_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/ba5a527c-bb4b-4d5e-8971-fb2b98766a2c_2021-05-16-15-49-32_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/c59cba31-6ace-43f3-b91c-435136f52e28_2021-05-16-16-13-52_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/c5fab484-26ef-4eda-a6ae-b9242fa99d6c_2021-05-16-09-40-05_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/c6f207c1-30ad-40f9-892b-df2fc591911d_2021-05-16-09-25-20_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/c7c4f942-d410-4a54-9929-46c8b1980cd5_2021-05-16-08-40-45_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/c9eafe99-7e6e-406c-9b77-c086553e0cbf_2021-05-16-09-00-40_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/cba8115b-cfd9-4bd6-924e-41b3a77b4a23_2021-05-16-16-12-44_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/ce72e81c-cc9f-4797-9e7b-fe63062d0981_2021-05-16-08-47-41_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/dbe8b567-0649-48c6-ae2e-e67835826d5e_2021-05-16-09-43-01_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/de93c0d9-d4c1-438f-a8a4-42e3ffae466a_2021-05-16-09-27-52_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/e0690d73-e9e0-4737-943a-72bad9e1d18c_2021-05-16-09-28-36_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/e2f05424-496b-441d-8ebe-dd3bf6240866_2021-05-16-09-49-42_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/e3aac091-5f6c-4460-892c-30eff4a70527_2021-05-16-15-41-25_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/f6460215-d246-4a32-b5c4-5574dccb7ea4_2021-05-16-08-39-11_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/f919d331-6783-4e24-b329-ad7baa2a535c_2021-05-16-09-29-02_test.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/txt/153.txt" beforeDir="false" afterPath="$PROJECT_DIR$/demo/temp/txt/153.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/temp/txt/789.txt" beforeDir="false" afterPath="$PROJECT_DIR$/demo/temp/txt/789.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/up_load.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/up_load.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/annotate.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/annotate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mykg/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mykg/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/over_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/over_view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/question_answering.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/question_answering.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/auto_create.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/auto_create.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,6 +70,17 @@
       </list>
     </option>
   </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="MERGE" />
@@ -151,8 +110,13 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/utils" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../demo12a" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -394,7 +358,9 @@
       <workItem from="1620988854875" duration="23842000" />
       <workItem from="1621076525909" duration="50573000" />
       <workItem from="1621153481024" duration="60000" />
-      <workItem from="1621156487102" duration="15758000" />
+      <workItem from="1621156487102" duration="18012000" />
+      <workItem from="1621209137486" duration="25335000" />
+      <workItem from="1621302998338" duration="4997000" />
     </task>
     <task id="LOCAL-00001" summary="一些测试和优化">
       <created>1621043826372</created>
@@ -424,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621153526757</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="自动导入基本完成">
+      <created>1621184001964</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1621184001964</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -458,7 +431,8 @@
     <MESSAGE value="neo4j的导入" />
     <MESSAGE value="前端card框和提示" />
     <MESSAGE value="自动导入的一些修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="自动导入的一些修改" />
+    <MESSAGE value="自动导入基本完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="自动导入基本完成" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -8,6 +8,7 @@ import nltk
 import requests
 import sys
 from py2neo import Graph
+# int
 from nltk.corpus import stopwords
 from collections import Counter
 from py2neo import Graph, Node, Relationship
@@ -25,7 +26,6 @@ def get_NE(text):
     # 分词
     key_1 = nltk.word_tokenize(text)
     key_1.append('===')  # 末尾加个不合法的，后面好写
-
     # 读取实体类别,注意要和predict_labels.txt一个目录
     label = domain_ner_dict
 
