@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import re
+
 from django.shortcuts import render
 from django.views.decorators import csrf
 import nltk
@@ -7,7 +9,13 @@ import sys
 sys.path.append("..")
 from utils.pre_load import thuFactory, neo_con, domain_ner_dict, get_NE
 from utils.nlp_ner import get_ner, tempword, get_detail_ner_info, get_ner_info
-
+def remove(text):
+    rep = re.compile(r'http://[a-zA-Z0-9.?/&=:]*', re.S)
+    text = rep.sub("", text)
+    rep = re.compile(r'https://[a-zA-Z0-9.?/&=:]*', re.S)
+    text = rep.sub("", text)
+    remove_chars = '[0-9’!"#$%&\'()*+,-./:;<=>?@，>><<。?★、…【】《》？“”‘’！[\\]^_`{|}~]+'
+    return re.sub(remove_chars, '', text)
 
 # 中文分词+词性标注+命名实体识别
 def ner_post(request):
@@ -15,10 +23,12 @@ def ner_post(request):
     if request.POST:
         # 获取输入文本
         key = request.POST['user_text']
+        key2 = remove(key)
+        # print(key2)
         # print(key)
         an=[]
         # 所有字符转化为小写
-        key_1 = key.casefold()
+        key_1 = key2.casefold()
         #print(key_1)
         key_1 = key_1.split(" ")
         #print(key_1)
@@ -27,7 +37,7 @@ def ner_post(request):
         # print(key_1)
         label = domain_ner_dict  # 实体列表
         pair = []
-        NE_list = get_NE(key)
+        NE_list = get_NE(key2)
         text = ""
         for pair in NE_list:
             if pair[1] == 0:
@@ -77,3 +87,4 @@ def ner_post(request):
         # ctx['seg_word'] = seg_word
 
     return render(request, "index.html", ctx)
+

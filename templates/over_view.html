@@ -1,14 +1,14 @@
 {% extends "base.html" %} {% block mainbody %}
-        <script src="/static/css/echarts.js"></script>
-        <div class="row">
-        <div class="col-md-7">
+    <script src="/static/css/echarts.js"></script>
+    <div class="row">
+        <div class="col-md-12">
             <div id="shutu" style="width: 100%;height:400px;">
 
             </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-5">
             <div class="panel" style="background: #1c2434">
                 <header class="panel-heading">
                     缺陷报告示例（来自Bugzilla）
@@ -20,13 +20,13 @@
         </div>
         {% if entityRelation %}
             <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
-            <div class="col-md-5">
+            <div class="col-md-7">
                 <div class="panel " style="background: #1c2434">
                     <header class="panel-heading">
-                    缺陷关系图示例（来自Bugzilla）
-                </header>
+                        缺陷关系图示例（来自Bugzilla）
+                    </header>
                     <div class="panel-body ">
-                        <div id="graph" style="width: 100%;height:500px;"></div>
+                        <div id="graph" style="width: 100%;height:600px;"></div>
                     </div>
                 </div>
             </div>
@@ -43,6 +43,9 @@
 
             //{entity2,rel}
             var entityRelation = [{{ entityRelation|safe }}];
+
+            //var entityRelation = [[{"rel": {"name": "Describe", "type": "Describe"}, "entity2": {"name": "crash"}, "relationCount": 0}, {"rel": {"name": "Describe", "type": "Describe"}, "entity2": {"name": "open"}, "relationCount": 0}, {"rel": {"name": "Describe", "type": "Describe"}, "entity2": {"name": "immediate"}, "relationCount": 0}, {"rel": {"name": "Describe", "type": "Describe"}, "entity2": {"name": "list properties"}, "relationCount": 0}, {"rel": {"name": "Describe", "type": "Describe"}, "entity2": {"name": "select"}, "relationCount": 0}, {"rel": {"name": "Describe", "type": "Describe"}, "entity2": {"name": "cursor"}, "relationCount": 0}, {"rel": {"name": "Describe", "type": "Describe"}, "entity2": {"name": "right click"}, "relationCount": 0}, {"rel": {"name": "Describe", "type": "Describe"}, "entity2": {"name": "browser"}, "relationCount": 0}, {"rel": {"name": "Describe", "type": "Describe"}, "entity2": {"name": "edit page"}, "relationCount": 0}, {"rel": {"name": "Status", "type": "Status"}, "entity2": {"name": "VERIFIED"}, "relationCount": 0}, {"rel": {"name": "Severity", "type": "Severity"}, "entity2": {"name": "critical"}, "relationCount": 0}, {"rel": {"name": "Priority", "type": "Priority"}, "entity2": {"name": "Not set"}, "relationCount": 0}, {"rel": {"name": "Type", "type": "Type"}, "entity2": {"name": "defect"}, "relationCount": 0}, {"rel": {"name": "Product", "type": "Product"}, "entity2": {"name": "defect"}, "relationCount": 0}]];
+            console.log(entityRelation);
 
             var category = [{
                 name: '缺陷id',
@@ -100,11 +103,11 @@
                     } else {
                         node['category'] = 1;
                     }
-                    id = i + 1
+                    id = i + 1;
                     node['id'] = id.toString();
                     var flag = 1;
                     relationTarget = id.toString();
-                    relation = {}
+                    relation = {};
                     relation['source'] = 0;
                     relation['target'] = relationTarget;
                     relation['category'] = 0;
@@ -112,7 +115,7 @@
                     if (flag === 1) {
                         data.push(node);
                         relation['value'] = entityRelation[0][i]['rel']['type'];
-                        relation['symbolSize'] = 10
+                        relation['symbolSize'] = 10;
                         links.push(relation);
                     } else {
                         maxDisPlayNode += 1;
@@ -124,8 +127,73 @@
                         }
                     }
                 }
-
-
+                var node = {};
+                //实体１
+                node['name'] = "1629951";
+                //alert(document.getElementById('user_text').value)
+                node['draggable'] = true;
+                node['symbolSize'] = 60;
+                node['category'] = 0;
+                node['id'] = "15";
+                data.push(node);
+                var node1={};
+                node1['name'] = "1536454";
+                //alert(document.getElementById('user_text').value)
+                node1['draggable'] = true;
+                node1['symbolSize'] = 60;
+                node1['category'] = 0;
+                node1['id'] = "17";
+                data.push(node1);
+                {#node['name'] = "1536454";#}
+                {#//alert(document.getElementById('user_text').value)#}
+                {#node['draggable'] = true;#}
+                {#node['symbolSize'] = 80;#}
+                {#node['category'] = 0;#}
+                {#data.push(node);#}
+                const relation0 = {};
+                relation0['source'] = "5";
+                relation0['target'] = "9";
+                relation0['category'] = 0;
+                relation0['value'] = "Sem";
+                links.push(relation0);
+                const relationd = {};
+                relationd['source'] = "2";
+                relationd['target'] = "8";
+                relationd['category'] = 0;
+                relationd['value'] = "Exp";
+                links.push(relationd);
+                const relatione = {};
+                relatione['source'] = "4";
+                relatione['target'] = "7";
+                relatione['category'] = 0;
+                relatione['value'] = "Sem";
+                links.push(relatione);
+                const relation1 = {};
+                relation1['source'] = "3";
+                relation1['target'] = "1";
+                relation1['category'] = 0;
+                relation1['value'] = "Exp";
+                links.push(relation1);
+                relation2 = {};
+                relation2['source'] = "7";
+                relation2['target'] = "1";
+                relation2['category'] = 0;
+                relation2['value'] = "Cau";
+                links.push(relation2);
+                const relation3 = {};
+                relation3['source'] = "0";
+                relation3['target'] = "15";
+                relation3['category'] = 0;
+                relation3['value'] = "Similar";
+                links.push(relation3);
+                console.log(links);
+                const relation4 = {};
+                relation4['source'] = "0";
+                relation4['target'] = "17";
+                relation4['category'] = 0;
+                relation4['value'] = "Similar";
+                links.push(relation4);
+                console.log(links);
                 //用表格列出所有的关系
                 tableData = [];
                 {#alert(entityRelation[0][1]['rel']['type']);#}
@@ -138,15 +206,6 @@
                     {#alert(entityRelation[0][i]['entity2']['name'])#}
                     tableData.push(relationData);
                 }
-                {#alert(String(tableData));#}
-                jQuery(function () {
-                    $('.table').footable({
-                        "columns": [{"name": "entity1", title: "Entity1"},
-                            {"name": "relation", title: "Relation"},
-                            {"name": "entity2", title: "Entity2"}],
-                        "rows": tableData
-                    });
-                });
 
             }
             // 基于准备好的dom，初始化echarts实例
@@ -155,7 +214,7 @@
                 title: {
                     textStyle: { //主标题文本样式{"fontSize": 18,"fontWeight": "bolder","color": "#333"}
                         fontSize: 20,
-                        color: "#c8e6c6"
+                        color: "#6b9ac9"
                     },
                 },
                 tooltip: {
@@ -187,7 +246,7 @@
                         textStyle: {
                             fontSize: 20,
                             fontWeight: 'bolder',
-                            color: "#c8e6c6"
+                            color: "#6b9ac9"
                         },
                     }
                 },
@@ -210,8 +269,8 @@
                             normal: {
                                 show: true,
                                 textStyle: {
-                                    fontSize: 12,
-                                    color: "#c8e6c6"
+                                    fontSize: 15,
+                                    color: "#fffae8"
                                 },
                                 formatter: "{c}"
                             }
@@ -237,9 +296,9 @@
                         },
                         force: {
                             repulsion: 1900,
-                            edgeLength: [55, 35]
+                            edgeLength: [55, 80]
                         },
-                        animationEasingUpdate: "quinticInOut",          // 数据更新动画的缓动效果。[ default: cubicOut ]    "quinticInOut"
+                        animationEasingUpdate: "cubicOut",          // 数据更新动画的缓动效果。[ default: cubicOut ]    "quinticInOut"
                         animationDurationUpdate: 1000,
                         categories: category,
                         data: data,
@@ -251,10 +310,10 @@
             // 使用刚指定的配置项和数据显示图表。
             myChart.setOption(option);
             myChart.on('dblclick', function (params) {
-            // 控制台打印数据的名称
-                console.log(params.name)
-            window.open('https://bugzilla.mozilla.org/show_bug.cgi?id=' + encodeURIComponent(params.name));
-        });
+                // 控制台打印数据的名称
+                console.log(params.name);
+                window.open('https://bugzilla.mozilla.org/show_bug.cgi?id=' + encodeURIComponent(params.name));
+            });
         </script>
     {% endif %}
     <script type="text/javascript">

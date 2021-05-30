@@ -1,4 +1,6 @@
 import json
+import os
+import pickle
 import re
 import string
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -17,6 +19,8 @@ from django.shortcuts import render
 from utils.pre_load import pre_load_thu, neo_con
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
+
+filePath = os.path.abspath(os.path.join(os.getcwd(), "."))
 
 
 def tfidf_similarity(s1, s2):
@@ -54,13 +58,13 @@ def deal_type(BugID):
     ret_dict = {'bid': BugID}
     relations = []
     db = neo_con
-    print(BugID)
+    #print(BugID)
     answer = db.matchItembyname(BugID)
-    print(answer)
+    #print(answer)
     answer = json.dumps(answer, ensure_ascii=False)
     answer = json.loads(answer)
-    print("我来了")
-    print(answer)
+    #print("我来了")
+    #print(answer)
     ret_dict['answer'] = answer[0]['n'].get('Type')
     entityRelation = db.getEntityRelationbyEntity(BugID)
     entityRelation_s = sortDict(entityRelation)
@@ -75,7 +79,8 @@ def deal_type(BugID):
     ret_dict['relations'] = relations
     return ret_dict
 
-#范围，进度，成本，质量
+
+# 范围，进度，成本，质量
 def deal_priority(BugID):
     ret_dict = {'bid': BugID}
     relations = []
@@ -191,7 +196,7 @@ def deal_desc(BugID):
     relations = []
     db = neo_con
     q_answer = models.DATAs.objects.filter(Bug_ID=BugID).values("comment").first()
-    print(q_answer)
+    #print(q_answer)
     if q_answer is None:
         answer = "抱歉，暂时没有答案"
     else:
@@ -212,8 +217,17 @@ def deal_desc(BugID):
         rel.append(entityRelation[i]["entity2"]["name"])
         relations.append(rel)
     ret_dict['relations'] = relations
-    print(ret_dict)
+    #print(ret_dict)
     return ret_dict
+
+
+# 读取处理好的文件（包含缺陷id和标题）
+def read():
+    # -------pickle文件->list---------
+    pk2_name = open(filePath + "/utils/dit2pic_3000.pk", 'rb')
+    list2 = pickle.load(pk2_name,encoding='utf-8')
+    # print(list2)
+    return list2
 
 
 def q_a(request):
@@ -223,13 +237,14 @@ def q_a(request):
     context = {'ctx': ''}
     if request.GET:
         question = request.GET['question']
-        print(question)
+        #print(question)
         Bug_list = re.findall(r'\d+', question)
         # 计算问题相似度
         an = {}
         choice = -1
         i = 0
-        s = ['类型或种类或type是什么', '出现的原因或症状或描述是什么怎么复现或步骤或describe或description或方式', '严重性或severity怎么样', '优先级或priority怎么样', '状态或status是怎么样',
+        s = ['类型或种类或type是什么', '出现的原因或症状或描述是什么怎么复现或步骤或describe或description或方式', '严重性或severity怎么样', '优先级或priority怎么样',
+             '状态或status是怎么样',
              '现在的阶段或milestone', '作用的产品或product']
         for k in s:
             sim = tfidf_similarity(question, k)
@@ -252,13 +267,54 @@ def q_a(request):
         # 去标点符号
         splited = [''.join(c for c in s if c not in string.punctuation) for s in splited]
         splited = [w.lower() for w in splited]
-        print(splited)
+        #print(splited)
         if BugID:
+            # 根据ID找相似Bug
+            an = {}
+            lists = read()
+            s1 = "1629951"
+            s1 = lists[s1]
+            # print(s1)
+            for key in lists:
+                sim1 = tfidf_similarity(s1, lists[key])
+                # sim2 = jaccard_similarity(s1, k)
+                # sim3=tf_similarity(s3, s1)
+                an[key] = sim1
+            an = sorted(an.items(), key=lambda x: x[1], reverse=True)
+            print("开始")
+            print(an[:5])
+            recommend=[]
+            k=1
+            for i in range(10):
+                if models.DATAs.objects.filter(Bug_ID=an[i][0]).values("comment").first() is None:
+                    print("你好")
+                    continue
+                shuxing = {}
+                q_title = models.DATAs.objects.filter(Bug_ID=an[i][0]).values("title").first()
+                q_product = models.DATAs.objects.filter(Bug_ID=an[i][0]).values("product").first()
+                q_type = models.DATAs.objects.filter(Bug_ID=an[i][0]).values("Type").first()
+                q_priority = models.DATAs.objects.filter(Bug_ID=an[i][0]).values("Priority").first()
+                q_severity = models.DATAs.objects.filter(Bug_ID=an[i][0]).values("Severity").first()
+                q_status = models.DATAs.objects.filter(Bug_ID=an[i][0]).values("Status").first()
+                q_comment = models.DATAs.objects.filter(Bug_ID=an[i][0]).values("comment").first()
+                shuxing['q_id'] = an[i][0]
+                shuxing['q_title'] = q_title
+                shuxing['q_product'] = q_product
+                shuxing['q_type'] = q_type
+                shuxing['q_priority'] = q_priority
+                shuxing['q_severity'] = q_severity
+                shuxing['q_status'] = q_status
+                shuxing['q_comment'] = q_comment
+                recommend.append(shuxing)
+                if(len(recommend)==5):
+                    break
+                print(shuxing)
             # or 'symptom' or 'symptons' or '症状' or '原因' or '怎么' or '如何'
             ret_dict['bid'] = BugID
+
             if 'description' in splited or '描述' in splited or '原因' in splited or '复现' in splited or 'describe' in splited or 'symptom' in splited or 'symptons' in splited or '症状' in splited or '原因' in splited or '怎么' in splited or '如何' in splited or 'how' in splited or 'symptom' in splited or 'symptons' in splited or '症状' in splited or '原因' in splited or '怎么' in splited or '如何' in splited or choice == 1:
                 ret_dict = deal_desc(BugID)
-                print(ret_dict)
+                #print(ret_dict)
             elif 'type' in splited or '类型' in splited or choice == 0:
                 ret_dict = deal_type(BugID)
             elif 'priority' in splited or '优先' in splited or choice == 3:
@@ -272,12 +328,51 @@ def q_a(request):
             elif 'product' in splited or choice == 6:
                 ret_dict = deal_product(BugID)
             else:
-
                 return render(request, "question_answering.html", {'cttx': "抱歉，暂时未找到答案,请您换种问题试试"})
-
+            ret_dict['recommend'] = recommend
+            print(ret_dict)
             return render(request, "question_answering.html", {'ctx': json.dumps(ret_dict, ensure_ascii=False)})
-        elif "Firefox里经常出Bug的是哪些组件" in question:
-            ret_dict = {'answers': ['General', 'Bookmarks&History', 'Theme']}
+        elif question :
+            # 根据ID找相似Bug
+            an = {}
+            s1 = question
+            lists = read()
+            # print(s1)
+            for key in lists:
+                sim1 = tfidf_similarity(s1, lists[key])
+                # sim2 = jaccard_similarity(s1, k)
+                # sim3=tf_similarity(s3, s1)
+                an[key] = sim1
+            an = sorted(an.items(), key=lambda x: x[1], reverse=True)
+            print("开始")
+            print(an[:5])
+            recommend=[]
+            k=1
+            for i in range(10):
+                if models.DATAs.objects.filter(Bug_ID=an[i][0]).values("Priority").first() is None or models.DATAs.objects.filter(Bug_ID=an[i][0]).values("comment").first()== "" or models.DATAs.objects.filter(Bug_ID=an[i][0]).values("comment").first() is None:
+                    continue
+                shuxing = {}
+                q_title = models.DATAs.objects.filter(Bug_ID=an[i][0]).values("title").first()
+                q_product = models.DATAs.objects.filter(Bug_ID=an[i][0]).values("product").first()
+                q_type = models.DATAs.objects.filter(Bug_ID=an[i][0]).values("Type").first()
+                q_priority = models.DATAs.objects.filter(Bug_ID=an[i][0]).values("Priority").first()
+                q_severity = models.DATAs.objects.filter(Bug_ID=an[i][0]).values("Severity").first()
+                q_status = models.DATAs.objects.filter(Bug_ID=an[i][0]).values("Status").first()
+                q_comment = models.DATAs.objects.filter(Bug_ID=an[i][0]).values("comment").first()
+                shuxing['q_id'] = an[i][0]
+                shuxing['q_title'] = q_title
+                shuxing['q_product'] = q_product
+                shuxing['q_type'] = q_type
+                shuxing['q_priority'] = q_priority
+                shuxing['q_severity'] = q_severity
+                shuxing['q_status'] = q_status
+                shuxing['q_comment'] = q_comment
+                recommend.append(shuxing)
+                if(len(recommend)==5):
+                    break
+                print("你好")
+                print(recommend)
+            ret_dict['recommend'] = recommend
             return render(request, "question_answering.html", {'ctx': json.dumps(ret_dict, ensure_ascii=False)})
         else:
             return render(request, "question_answering.html", {'cttx': "抱歉，暂时未找到答案,请您换种问题试试"})

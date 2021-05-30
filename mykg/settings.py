@@ -25,9 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'qy2phni07!gxol5$-x)amz8*)r=54)=7#g@73tet@)f19-z558'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["118.195.147.91"]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -73,7 +73,7 @@ TEMPLATES = [
         },
     },
 ]
-
+X_FRAME_OPTIONS='ALLOWALL url'
 WSGI_APPLICATION = 'mykg.wsgi.application'
 
 
@@ -139,7 +139,7 @@ STATIC_URL = '/static/'
 
 # STATIC_ROOT = 'G:/pythonlearn/mykg/static' ## 新增行
 # settings:APPEND_SLASH=False
+# 自加静态目录配置
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
+    os.path.join(BASE_DIR, "static")
 ]
-

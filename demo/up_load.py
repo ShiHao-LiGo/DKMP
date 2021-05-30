@@ -1,11 +1,9 @@
-
 import zipfile
 
 from django.shortcuts import render, redirect
 from django.http import HttpResponse, JsonResponse
 from datetime import datetime
 import uuid
-
 
 import csv
 import json
@@ -155,11 +153,6 @@ def fenci(sent):
 countlist = []
 
 
-
-
-
-
-
 # [输出]:
 # [Counter({'document': 1, 'first': 1, 'is': 1, 'the': 1, 'this': 1}),
 #  Counter({'document': 1, 'is': 1, 'second': 2, 'the': 1, 'this': 1}),
@@ -203,8 +196,8 @@ def jisuan(sentence):
         data = {}
         an = []
         data["t"] = sentence
-        response = requests.post(url='http://localhost:5006/person/extract', headers=headers,
-                                 data=json.dumps(data))  ## post的时候，将data字典形式的参数用json包转换成json格式。
+        response = requests.post(url='http://3c774b0589.qicp.vip:41390/person/extract', headers=headers,
+                                 data=json.dumps(data))  # post的时候，将data字典形式的参数用json包转换成json格式。
         # print("1")
         # print(response)
         datas = json.loads(response.text)
@@ -268,10 +261,9 @@ def kankan():
     return load_list
 
 
-
-
 def to_fileupload(request):
     return render(request, 'annotate.html')
+
 
 def local(request):
     file = request.FILES.get('file')
@@ -283,8 +275,8 @@ def local(request):
         return HttpResponse('请选择要导入的文件！<a href="/annotating/">返回</a> ')
 
     # file_name = os.getcwd()+'\\demo\\temp\\{}_{}_{}'.format(uuid.uuid4(), datetime.now().strftime('%Y-%m-%d-%H-%M-%S'), file.name)
-    path = os.getcwd() + '\\demo\\temp\\{}_{}_{}'.format(uuid.uuid4(), datetime.now().strftime('%Y-%m-%d-%H-%M-%S'),
-                                                         file.name)
+    path = os.getcwd() + '/demo/temp/{}_{}_{}'.format(uuid.uuid4(), datetime.now().strftime('%Y-%m-%d-%H-%M-%S'),
+                       file.name)
     with open(path, 'wb') as f:
         for chunk in file.chunks():
             f.write(chunk)
@@ -293,11 +285,11 @@ def local(request):
     star = ""
     for item in zfile.namelist():
         if item.endswith(".txt"):
-            zfile.extract(item, os.getcwd() + '\\demo\\temp\\txt')
+            zfile.extract(item, os.getcwd() + '/demo/temp/txt')
     zfile.close()
     for item in zfile.namelist():
         if item.endswith(".txt"):
-            txt_path = os.getcwd() + '\\demo\\temp\\txt\\' + item
+            txt_path = os.getcwd() + '/demo/temp/txt/' + item
             f = open(txt_path, "r", encoding='utf-8')
             star = star + " " + f.read()
     f.close()
@@ -340,7 +332,7 @@ def local(request):
         relation = Relationship(node_ID, 'Describe', t, name="Describe")
         graph.create(relation)
         # 若只输入entity1,则输出与entity1有直接关系的实体和关系
-    if (len(Bug_Id) != 0 ):
+    if (len(Bug_Id) != 0):
         db = neo_con
         searchResult = db.findRelationByEntity(Bug_Id)
         searchResult = sortDict(searchResult)
@@ -348,9 +340,9 @@ def local(request):
         #     return render(request, "relation.html", {'ctx': ctx})
         kk = json.dumps(searchResult, ensure_ascii=False)
         tt = json.loads(kk)
-            # print("11111111111111111")
+        # print("11111111111111111")
         for i in range(len(searchResult)):
-                # print(tt[i]["rel"])
+            # print(tt[i]["rel"])
             tt[i]["rel"]["type"] = list(searchResult[i]['rel'].types())[0]
             #     print("111111111111111111")
             #     print(tt[i]["rel"])
@@ -358,7 +350,6 @@ def local(request):
         if (len(searchResult) > 0):
             return render(request, 'annotate.html', {'searchResult': json.dumps(tt, ensure_ascii=False)})
     return render(request, "annotate.html", ctx)
-
 
 # def local_a(request):
 #     print(request.is_ajax())

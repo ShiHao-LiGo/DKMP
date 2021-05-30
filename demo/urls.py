@@ -23,7 +23,8 @@ urlpatterns = [
     path('search_entity/',entity_view.entity),
     path('ER-post/',ner_view.ner_post),
     path('test_QA/',QA_view.QA1),
-    path('testtupu/',relation_view.testtupu)
+    path('testtupu/',relation_view.testtupu),
+    path('rel/',entity_view.rel),
 ]
 
 

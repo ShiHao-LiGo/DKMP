@@ -2,14 +2,20 @@
 
 {% block mainbody %}
 
-<div class="container">
     <div class="row">
         <div class="col-md-12">
 
             <!--overview start-->
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="page-header"><i class="fa fa-search"></i> 实体识别 </h3>
+                    <div class="row">
+                        <h3 class="page-header col-md-10"><i class="fa fa-search"></i> 实体识别 </h3>
+                        <button type="button" class="btn btn-primary col-md-2" title="输入的缺陷文本" data-container="body"
+                                data-toggle="popover" data-placement="bottom" data-content="JUnit view icon no longer shows progress while executing tests">
+                            示例
+                        </button>
+                    </div>
+
                     <ol class="breadcrumb">
                         <li><i class="fa fa-home"></i><a href="\">Home</a></li>
                         <li><i class="fa fa-search"></i>实体识别</li>
@@ -25,48 +31,48 @@
                     <form action="/ER-post/" method="post">
                         <div class="form-group">
                             {% csrf_token %}
-                            <textarea type="text" name="user_text" class="form-control" placeholder="Enter text" style="height:140px"> </textarea>
+                            <textarea type="text" name="user_text" class="form-control" placeholder="Enter text"
+                                      style="height:140px"> </textarea>
                         </div>
                         <div class="col-md-4"></div>
                         <div class="col-md-4">
-                            <button type="submit" class="btn-primary btn-lg btn-block"> 提交！ </button>
+                            <button type="submit" class="btn-primary btn-lg btn-block"> 提交！</button>
                         </div>
                         <div class="col-md-4"></div>
                     </form>
                 </div>
             </section>
             <!--collapse start-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                        [查看分词结果]
+                    </a>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        {% autoescape off %}
+                            <h5> {{ seg_word }}</h5>
+                        {% endautoescape %}
+                    </div>
+                </div>
+            </div>
             <div class="panel-group m-bot20" id="accordion">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                    [查看识别结果]
+                            [查看识别结果]
                         </a>
                     </div>
                     <div id="collapseOne" class="panel-collapse collapse in">
                         <div class="panel-body">
                             {% autoescape off %}
-                            <h5>{{ rlt }}</h5>
+                                <h5>{{ rlt }}</h5>
                             {% endautoescape %}
                         </div>
                     </div>
                 </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
 
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                                    [查看分词结果]
-                            </a>
-
-                    </div>
-                    <div id="collapseTwo" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            {% autoescape off %}
-                            <h5> {{ seg_word }}</h5>
-                            {% endautoescape %}
-                        </div>
-                    </div>
-                </div>
 
             </div>
             <!--collapse end-->
@@ -74,6 +80,10 @@
         </div>
 
     </div>
-</div>
+
+    <script>$(function () {
+        $("[data-toggle='popover']").popover();
+    });
+    </script>
 
 {% endblock %}

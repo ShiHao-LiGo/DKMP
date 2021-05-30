@@ -1,0 +1,406 @@
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title></title>
+        <meta charset="utf-8"/>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
+    <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
+    <link rel="shortcut icon" href="/static/img/bug.png">
+    <title>软件缺陷知识管理平台</title>
+    <script src="/static/js/jquery-2.1.1.min.js"></script>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="/static/css/elegant-icons-style.css" rel="stylesheet"/>
+    <link href="/static/fonts/iconfont.css" rel="stylesheet"/>
+    <link href="/static/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="/static/css/style.css" rel="stylesheet">
+    <link href="/static/css/jquery-ui-1.10.4.min.css" rel="stylesheet">
+    <link href="/static/css/tagcloud.css" rel="stylesheet">
+    <link href="/static/css/tree_style.css" rel="stylesheet">
+    <link href="/static/css/footable.bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+        <script src="/static/js/echarts.js"></script>
+        {#    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>#}
+    </head>
+
+    <title>实体&关系</title>
+        <div class="row">
+            <!--head start-->
+            <div class="col-md-12">
+                <h3 class="page-header"><i class="fa fa-link" aria-hidden="true"></i> 关系查询 </h3>
+            </div>
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <header class="panel-heading">
+                        查询条件：
+                    </header>
+                    <div class="panel-body">
+                        {#                          <button class="btn btn-danger m-2" onclick="$.hulla.send('这是一则危险信息', 'danger')">Danger</button>#}
+
+                        <form id="searchRelationForm" class="form-inline" style="padding-left: 10% ; padding-right: 10%"
+                              method="get">
+                            <div id="entity1" class="form-group" style="padding: 2%">
+                                <input type="text" id="entity1_text" name="entity1_text" class="form-control"
+                                       placeholder="实体１" aria-describedby="basic-addon1">
+                            </div>
+                            <!--dropdown combobox start-->
+                            <div class="btn-group" style="padding: 2%"><a
+                                    class="btn btn-default dropdown-toggle btn-select form-control"
+                                    data-toggle="dropdown" id="btnCountry">Select a Relation <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Product</a></li>
+                                    <li><a href="#">Component</a></li>
+                                    <li><a href="#">Type</a></li>
+                                    <li><a href="#">Priority</a></li>
+                                    <li><a href="#">Severity</a></li>
+                                    <li><a href="#">status</a></li>
+                                    <li><a href="#">Milestone</a></li>
+                                    <li><a href="#">Describe</a></li>
+                                    {#			                <li class="divider"></li>#}
+                                    {#			                <li><a href="#"><span class="glyphicon glyphicon-star"></span>Other</a></li>#}
+                                </ul>
+                            </div>
+
+                            <!--dropdown combobox end-->
+                            <div id="relation_name" class="form-group hide" style="padding: 2%">
+                                <input type="text" id="relation_name_input" name="relation_name_text"
+                                       class="form-control" placeholder="输入关系名称" aria-describedby="basic-addon1">
+                            </div>
+                            <div id="entity2" class="form-group" style="padding: 2%">
+                                <input type="text" id="entity2_text" name="entity2_text" class="form-control"
+                                       placeholder="实体２" aria-describedby="basic-addon1">
+                            </div>
+                            {#                   onclick="document.getElementById('searchRelationForm').submit();"#}
+                            <div class="btn-group" style="padding: 2%">
+                                <button type="button" id="btnSearch" class="btn btn-primary" onclick="myFunction();">
+                                    Search
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            {% if ctx %}
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <header class="panel-heading">
+                            查询结果：
+                        </header>
+                        <div class="panel-body">
+                            <div style="padding: 2%">
+                                <h2>暂未找到相应的匹配</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+
+            {% if searchResult %}
+
+                <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+                <div class="col-md-12">
+                    <div class="panel panel-default ">
+                        <div class="panel-body " style="background: #1c2434">
+                            <div id="graph" style="width: 100%;height:700px;"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footable -->
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <header class="panel-heading">
+                            关系列表 :
+                        </header>
+                        <div class="panel-body">
+                            <table class="table" data-paging="true" data-sorting="true"></table>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+
+        </div>
+        <script src="/static/js/jquery-1.8.3.min.js"></script>
+     <script src="/static/js/hullabaloo.js"></script>
+        <script>
+            function myFunction() {
+                //alert(document.getElementById('entity1_text').value)
+                if(document.getElementById('entity1_text').value.replace(/(^\s*)|(\s*$)/g, "").length==0 && document.getElementById('entity2_text').value.replace(/(^\s*)|(\s*$)/g, "").length==0){
+                    $.hulla.send('请输入查询的实体', 'danger')
+                }else{
+                   document.getElementById('searchRelationForm').submit();
+                }
+                //document.getElementById('searchRelationForm').submit();
+            };
+        </script>
+        {% if searchResult %}
+            <script type="text/javascript">
+
+                {#$(document).ready(function(){#}
+                {#  $("#btnSearch").click(function(){#}
+                {#    document.getElementById('searchRelationForm').submit();#}
+                {#  });#}
+                {# });#}
+                var searchResult =
+                {{searchResult|safe}}
+                {#alert(searchResult)#}
+                var category = [{
+                    name: '缺陷id',
+                    color: '#4592FF',
+                    itemStyle: {
+                        normal: {
+                            color: "#4592FF",
+                            symbolSize: 20
+                        }
+                    },
+                }, {
+                    name: '文本实体',
+                    color: '#ffa940',
+                    itemStyle: {
+                        normal: {
+                            color: "#ffa940",
+                            symbolSize: 5
+                        }
+                    }
+                }];
+                //用表格列出所有的关系
+                tableData = [];
+                {#alert(JSON.stringify(searchResult));#}
+                var limit = 50;
+                for (var i = 0; i < searchResult.length; i++) {
+                    relationData = {};
+                    relationData['entity1'] = searchResult[i]['n1']['name'];
+                    {#alert(searchResult[i]);#}
+                    relationData['relation'] = searchResult[i]['rel']['type'];
+
+                    relationData['entity2'] = searchResult[i]['n2']['name'];
+                    tableData.push(relationData);
+                }
+                console.log("你好");
+                console.log(tableData);
+                jQuery(function () {
+                    $('.table').footable({
+                        "columns": [{"name": "entity1", title: "Entity1"},
+                            {"name": "relation", title: "Relation"},
+                            {"name": "entity2", title: "Entity2"}],
+                        "rows": tableData
+                    });
+                });
+
+                //echarts 数据
+                var data = [];
+                var links = [];
+
+                //构造展示的数据
+                var maxDisPlayNode = 50;
+                var id = 0;
+                for (var i = 0; id < maxDisPlayNode && i < searchResult.length; i++) {
+                    //获取node1
+                    node1 = {};
+                    node1['name'] = searchResult[i]['n1']['name'];
+                    node1['draggable'] = true;
+                    node1['symbolSize'] = 80;
+                    var n = Number(node1['name']);
+                    if (!isNaN(n)) {
+                        node1['category'] = 0;
+                    } else {
+                        node1['category'] = 1;
+                    }
+                    var flag = 1;
+
+                    relationTarget = id.toString();
+                    for (var j = 0; j < data.length; j++) {
+                        if (data[j]['name'] === node1['name']) {
+                            flag = 0;
+                            relationTarget = data[j]['id'];
+                            break;
+                        }
+                    }
+
+                    node1['id'] = relationTarget;
+                    if (flag === 1) {
+                        id++;
+                        data.push(node1);
+                    }
+
+                    //获取node2
+                    node2 = {};
+                    node2['name'] = searchResult[i]['n2']['name'];
+                    node2['draggable'] = true;
+                    node2['symbolSize'] = 20;
+                    var k = Number(node2['name']);
+                    if (!isNaN(k)) {
+                        node2['category'] = 0;
+                    } else {
+                        node2['category'] = 1;
+                    }
+                    flag = 1;
+                    relationTarget = id.toString();
+                    for (var j = 0; j < data.length; j++) {
+                        if (data[j]['name'] === node2['name']) {
+                            flag = 0;
+                            relationTarget = data[j]['id'];
+                            break;
+                        }
+                    }
+                    node2['id'] = relationTarget;
+                    if (flag === 1) {
+                        id++;
+                        data.push(node2);
+                    }
+                    //获取relation
+                    relation = {}
+                    relation['source'] = node1['id'];
+                    relation['target'] = node2['id'];
+                    relation['category'] = 0;
+                    flag = 1;
+                    for (var j = 0; j < links.length; j++) {
+                        if (links[j]['source'] == relation['source'] && links[j]['target'] == relation['target']) {
+                            links[j]['value'] = links[j]['value'] + searchResult[i]['rel']['type'];
+                            flag = 0;
+                            break;
+                        }
+                    }
+                    if (flag === 1) {
+                        relation['value'] = searchResult[i]['rel']['type'];
+                        relation['symbolSize'] = 10;
+                        links.push(relation);
+                    }
+
+                }
+
+
+                // 基于准备好的dom，初始化echarts实例
+                var myChart = echarts.init(document.getElementById('graph'));
+
+                option = {
+                    backgroundColor: '#1c2434',
+                    title: {
+                        textStyle: { //主标题文本样式{"fontSize": 18,"fontWeight": "bolder","color": "#333"}
+                            fontSize: 20,
+                            color: "#c8e6c6"
+                        },
+                        text: '关系图',
+                    },
+                    tooltip: {
+                        formatter: function (x) {
+                            return x.data.des;
+                        }
+                    },
+                    toolbox: {
+                        // 显示工具箱
+                        show: true,
+                        feature: {
+                            mark: {
+                                show: true
+                            },
+                            // 还原
+                            restore: {
+                                show: true
+                            },
+                            // 保存为图片
+                            saveAsImage: {
+                                show: true
+                            }
+                        }
+                    },
+                    label: {
+                        normal: {
+                            show: true,
+                            position: "inside",
+                            textStyle: {
+                                fontSize: 20,
+                                color: "#c8e6c6"
+                            },
+                        }
+                    },
+                    legend: {//图例的样式设置
+                        backgroundColor: '#c9d8cd',
+                        data: category.map(function (a) {
+                            return a.name;
+                        }),
+                    },
+
+                    series: [
+                        {
+                            type: 'graph',
+                            layout: 'force',
+                            symbolSize: 50,
+                            focusNodeAdjacency: true,
+                            roam: true,
+                            edgeSymbol: ['circle', 'arrow'],
+                            edgeSymbolSize: [2, 10],
+                            edgeLabel: {//关系边的属性设置
+                                normal: {
+                                    show: true,
+                                    textStyle: {
+                                        fontSize: 15,
+                                        color: "#fffae8"
+                                    },
+                                    formatter: "{c}"
+                                }
+                            },
+                            lineStyle: {
+                                normal: {
+                                    {#opacity: 0.9,#}
+                                    width: 2,
+                                    color: "#c8e6c6",
+                                    {#curveness: 0,#}
+                                }
+                            },
+                            label: {//结点上的文字属性设置
+                                normal: {
+                                    show: true,
+                                    textStyle: {
+                                        fontSize: 20,
+                                        fontStyle: 'oblique',
+                                        fontWeight: 'bolder',
+                                        color: "#ffffff",
+
+                                    },
+                                }
+                            },
+                            force: {
+                                repulsion: 1900,
+                                edgeLength: [55, 80]
+                            },
+                             // 数据更新动画的缓动效果。[ default: cubicOut ]    "quinticInOut"
+                            animationEasingUpdate: "cubicOut",
+                            animationDurationUpdate: 1000,
+                            categories: category,
+                            data: data,
+                            links: links,
+                        }
+
+                    ]
+
+                };
+                // 使用刚指定的配置项和数据显示图表。
+                myChart.setOption(option);
+
+            </script>
+        {% endif %}
+        <script>
+            $.hulla = new hullabaloo();
+            $(".dropdown-menu li a").click(function () {
+                var selText = $(this).text();
+                $(this).parents('.btn-group').find('.dropdown-toggle').html(selText + ' <span class="caret"></span>');
+                if (selText.trim() != "Other") {
+                    $("#relation_name_input").val(selText.trim());
+                }
+                //combobox behavior
+                if (selText.trim() === "Other") {
+                    $("#relation_name").removeClass("hide");
+                } else {
+                    $("#relation_name").addClass("hide");
+                }
+            });
+            // $("#btnSearch").click(function(){
+            // 	alert($('.btn-select').text()+", "+$('.btn-select2').text());
+            // });
+        </script>
+<script src="/static/js/jquery-ui-1.10.4.min.js"></script>
+<script type="text/javascript" src="/static/js/jquery-ui-1.9.2.custom.min.js"></script>
+{#    <script src="/static/js/popper.min.js"></script>#}
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/js/footable.min.js"></script>

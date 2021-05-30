@@ -34,6 +34,7 @@ def tfidf(s1):
     print("计算TF-IDF值yayaya")
     print(corpus)
     print(vectors)
+
 def tfidf_similarity(s1, s2):
     def add_space(s):
         return ''.join(list(s))
@@ -70,22 +71,32 @@ def jaccard_similarity(s1, s2):
 
 if __name__ == '__main__':
 
-    s1 = "To code improve scannability"
+    s1 = "The downloads view in the Library is broken"
     s2 = '出现的原因是什么'
     tfidf(s1)
-    s3 = '严重性怎么样'
+    s3 = 'code improve scanna'
     s4 = '优先级怎么样'
     an = {}
     i = 0
-    s = ['type或类型或种类', '出现的原因或症状或描述是什么怎么复现或步骤或describe', '严重性或severity怎么样', '优先级或priority怎么样', '状态或status是怎么样',
-         '现在的阶段或milestone', '作用的产品或product']
-    # for k in s:
-    #     sim1 = tfidf_similarity(s1, k)
-    #     sim2 = jaccard_similarity(s1, k)
-    #     sim3=tf_similarity(s3, s1)
-    #     an[i] = sim2
-    #     i = i + 1
-    # an = sorted(an.items(), key=lambda x: x[1], reverse=True)
+    s = {
+        'bug01':'Add in a sponsored by override to collections',
+        'bug02':'The downloads view in the Library is broken,Firefox',
+        'bug03':'The message-group provider is causing 404 error for RemoteSettings',
+        'bug04':'Add default theme as an option on theme screen in Fx 80',
+        'bug05': 'Remove registration for FTP support on Windows',
+        'bug06': 'Use different tippytop icons for different Yandex search shortcuts',
+        'bug07': 'Show messaging-experiments messages in devtool'
+    }
+    # s = ['Add in a sponsored by override to collections', 'The downloads view in the Library is broken,Firefox', 'The message-group provider is causing 404 error for RemoteSettings', 'Add default theme as an option on theme screen in Fx 80', 'Remove registration for FTP support on Windows',
+    #      'Use different tippytop icons for different Yandex search shortcuts', 'Show messaging-experiments messages in devtool']
+    for key,value in s.items():
+        sim1 = tfidf_similarity(s1, value)
+        # sim2 = jaccard_similarity(s1, k)
+        # sim3=tf_similarity(s3, s1)
+        an[key] = sim1
+        i = i + 1
+    an = sorted(an.items(), key=lambda x: x[1], reverse=True)
+    print(an)
     # choice = an[0][0]
     # print(choice == 3)
     # print(an[0][1])

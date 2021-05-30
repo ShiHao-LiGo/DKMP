@@ -2,27 +2,636 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39cc2001-ebda-48af-8239-d99f3ba203fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/37338659-5469-44d7-ad12-9d8b7341d51c_2021-05-17-17-47-14_test (2).zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/49d7da7e-ae2d-4169-94c1-3802b5860432_2021-05-17-15-18-19_123.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/697d496b-4025-444c-838e-3feb2c70c3df_2021-05-17-15-22-30_123.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/8abaee03-2e9b-451f-bd78-7e9eb6c11354_2021-05-17-15-12-56_test (2).zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/8d277810-c1ba-4195-9db3-e0c918fab823_2021-05-17-17-05-25_test (2).zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/93456fcb-084f-4cf4-b762-0f40a1d480df_2021-05-17-15-22-09_123.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/9905a35a-cbb6-454a-9cfe-798b9b5e5675_2021-05-17-14-42-29_test (2).zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/b2bed02f-6966-4e26-8fa3-50f6a70ca74c_2021-05-17-15-23-12_123.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/bb5cf6ee-ef8c-42bf-9be3-bb1b5a1639fb_2021-05-17-18-42-51_test (2).zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/temp/c12b6680-1374-47d2-b266-f82e97d641d1_2021-05-17-14-40-14_test (2).zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mykg.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mykg.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sshConfigs.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/tech-denglu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/entity_and_relation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/dict2pickle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/dit2pic_3000.pk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/text2.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/text8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/title_cut.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/ts.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyMySQL-1.0.2.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyMySQL-1.0.2.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyMySQL-1.0.2.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyMySQL-1.0.2.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyMySQL-1.0.2.dist-info/REQUESTED" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyMySQL-1.0.2.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyMySQL-1.0.2.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba-0.42.1.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba-0.42.1.dist-info/REQUESTED" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba-0.42.1.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba-0.42.1.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/__main__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/_compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/analyse/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/analyse/analyzer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/analyse/idf.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/analyse/tfidf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/finalseg/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/finalseg/prob_emit.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/finalseg/prob_start.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/finalseg/prob_trans.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/finalseg/prob_trans.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/lac_small/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/lac_small/creator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/lac_small/model_baseline/crfw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/lac_small/model_baseline/fc_0.b_0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/lac_small/model_baseline/fc_1.b_0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/lac_small/model_baseline/fc_1.w_0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/lac_small/model_baseline/fc_2.b_0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/lac_small/model_baseline/fc_2.w_0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/lac_small/model_baseline/fc_4.b_0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/lac_small/model_baseline/fc_4.w_0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/lac_small/model_baseline/gru_1.b_0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/lac_small/model_baseline/gru_1.w_0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/lac_small/model_baseline/gru_2.b_0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/lac_small/model_baseline/gru_2.w_0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/lac_small/model_baseline/gru_3.w_0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/lac_small/model_baseline/word_emb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/lac_small/predict.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/lac_small/tag.dic" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/lac_small/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/lac_small/word.dic" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/posseg/char_state_tab.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/posseg/char_state_tab.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/posseg/prob_emit.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/posseg/prob_emit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/posseg/prob_start.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/posseg/prob_start.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/posseg/prob_trans.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/posseg/prob_trans.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jieba/posseg/viterbi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/_auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/charset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/connections.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/constants/COMMAND.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/constants/CR.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/constants/ER.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/constants/FIELD_TYPE.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/constants/FLAG.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/constants/SERVER_STATUS.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/converters.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/cursors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/err.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/optionfile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/protocol.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/times.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/scikit_learn-0.24.2.dist-info/COPYING" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/scikit_learn-0.24.2.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/scikit_learn-0.24.2.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/scikit_learn-0.24.2.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/scikit_learn-0.24.2.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/.libs/vcomp140.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/.libs/vcruntime140.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/.libs/vcruntime140_1.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/__check_build/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/__check_build/_check_build.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/_build_utils/openmp_helpers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/_config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/_distributor_init.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/_loss/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/_loss/glm_distribution.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/_loss/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/_loss/tests/test_glm_distribution.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/_min_dependencies.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/_affinity_propagation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/_agglomerative.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/_bicluster.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/_dbscan.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/_dbscan_inner.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/_feature_agglomeration.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/_hierarchical_fast.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/_k_means_fast.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/_k_means_fast.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/_k_means_lloyd.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/_kmeans.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/_optics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/_spectral.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/tests/common.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/tests/test_affinity_propagation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/tests/test_bicluster.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/tests/test_birch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/tests/test_feature_agglomeration.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/tests/test_hierarchical.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/tests/test_k_means.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/tests/test_mean_shift.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/tests/test_optics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cluster/tests/test_spectral.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/compose/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/compose/_column_transformer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/compose/_target.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/compose/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/compose/tests/test_column_transformer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/compose/tests/test_target.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/conftest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/covariance/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/covariance/_elliptic_envelope.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/covariance/_empirical_covariance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/covariance/_graph_lasso.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/covariance/_robust_covariance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/covariance/_shrunk_covariance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/covariance/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/covariance/tests/test_covariance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/covariance/tests/test_elliptic_envelope.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/covariance/tests/test_graphical_lasso.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/covariance/tests/test_robust_covariance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cross_decomposition/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cross_decomposition/_pls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/cross_decomposition/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/_base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/_california_housing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/_covtype.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/_kddcup99.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/_openml.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/_rcv1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/_samples_generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/_species_distributions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/_svmlight_format_fast.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/_svmlight_format_io.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/_twenty_newsgroups.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/data/boston_house_prices.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/data/breast_cancer.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/data/diabetes_data.csv.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/data/diabetes_target.csv.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/data/digits.csv.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/data/iris.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/data/linnerud_exercise.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/data/linnerud_physiological.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/descr/breast_cancer.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/descr/covtype.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/descr/diabetes.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/descr/digits.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/descr/iris.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/descr/kddcup99.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/descr/lfw.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/descr/linnerud.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/descr/olivetti_faces.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/descr/rcv1.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/descr/twenty_newsgroups.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/descr/wine_data.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/images/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/images/china.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/images/flower.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/conftest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/1/api-v1-json-data-1.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/1/api-v1-json-data-features-1.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/1119/api-v1-json-data-features-1119.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/1119/api-v1-json-data-list-data_name-adult-census-limit-2-data_version-1.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/1119/api-v1-json-data-list-data_name-adult-census-limit-2-status-active-.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/1119/api-v1-json-data-qualities-1119.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/2/api-v1-json-data-2.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/2/api-v1-json-data-features-2.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/2/api-v1-json-data-list-data_name-anneal-limit-2-data_version-1.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/2/api-v1-json-data-list-data_name-anneal-limit-2-status-active-.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/2/api-v1-json-data-qualities-2.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/2/data-v1-download-1666876.arff.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/292/api-v1-json-data-292.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/292/api-v1-json-data-40981.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/292/api-v1-json-data-features-292.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/292/api-v1-json-data-features-40981.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/292/api-v1-json-data-list-data_name-australian-limit-2-data_version-1-status-deactivated.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/292/api-v1-json-data-list-data_name-australian-limit-2-data_version-1.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/292/api-v1-json-data-list-data_name-australian-limit-2-status-active-.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/292/data-v1-download-49822.arff.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/3/api-v1-json-data-3.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/3/api-v1-json-data-features-3.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/3/api-v1-json-data-qualities-3.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/3/data-v1-download-3.arff.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/40589/api-v1-json-data-40589.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/40589/api-v1-json-data-features-40589.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/40589/api-v1-json-data-list-data_name-emotions-limit-2-data_version-3.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/40589/api-v1-json-data-list-data_name-emotions-limit-2-status-active-.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/40589/api-v1-json-data-qualities-40589.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/40589/data-v1-download-4644182.arff.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/40675/api-v1-json-data-features-40675.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/40675/api-v1-json-data-list-data_name-glass2-limit-2-data_version-1-status-deactivated.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/40675/api-v1-json-data-list-data_name-glass2-limit-2-data_version-1.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/40675/api-v1-json-data-list-data_name-glass2-limit-2-status-active-.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/40675/api-v1-json-data-qualities-40675.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/40945/api-v1-json-data-qualities-40945.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/40945/data-v1-download-16826755.arff.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/40966/api-v1-json-data-40966.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/40966/api-v1-json-data-features-40966.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/40966/api-v1-json-data-list-data_name-miceprotein-limit-2-status-active-.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/40966/api-v1-json-data-qualities-40966.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/40966/data-v1-download-17928620.arff.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/561/api-v1-json-data-561.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/561/api-v1-json-data-features-561.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/561/api-v1-json-data-list-data_name-cpu-limit-2-data_version-1.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/561/api-v1-json-data-qualities-561.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/61/api-v1-json-data-features-61.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/61/api-v1-json-data-list-data_name-iris-limit-2-data_version-1.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/61/api-v1-json-data-qualities-61.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/61/data-v1-download-61.arff.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/62/api-v1-json-data-features-62.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/openml/62/api-v1-json-data-qualities-62.json.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/svmlight_classification.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/svmlight_invalid_order.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/data/svmlight_multilabel.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/test_base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/test_california_housing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/test_common.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/test_kddcup99.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/test_lfw.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/test_rcv1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/tests/test_samples_generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/_base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/_cdnmf_fast.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/_dict_learning.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/_fastica.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/_kernel_pca.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/_lda.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/_nmf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/_pca.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/_sparse_pca.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/tests/test_dict_learning.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/tests/test_factor_analysis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/tests/test_incremental_pca.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/tests/test_nmf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/tests/test_online_lda.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/tests/test_pca.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/tests/test_sparse_pca.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/decomposition/tests/test_truncated_svd.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/discriminant_analysis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/dummy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/_bagging.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/_base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/_forest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/_gb_losses.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/_gradient_boosting.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/_hist_gradient_boosting/_binning.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/_hist_gradient_boosting/_bitset.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/_hist_gradient_boosting/_bitset.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/_hist_gradient_boosting/_loss.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/_hist_gradient_boosting/_predictor.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/_hist_gradient_boosting/binning.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/_hist_gradient_boosting/common.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/_hist_gradient_boosting/grower.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/_hist_gradient_boosting/loss.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/_hist_gradient_boosting/predictor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/_hist_gradient_boosting/splitting.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/_hist_gradient_boosting/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/_hist_gradient_boosting/tests/test_binning.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/_hist_gradient_boosting/tests/test_compare_lightgbm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/_hist_gradient_boosting/tests/test_gradient_boosting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/_hist_gradient_boosting/tests/test_grower.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/_hist_gradient_boosting/tests/test_histogram.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/_hist_gradient_boosting/tests/test_loss.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/_hist_gradient_boosting/tests/test_monotonic_contraints.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/_hist_gradient_boosting/tests/test_predictor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/_hist_gradient_boosting/tests/test_splitting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/_hist_gradient_boosting/utils.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/_stacking.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/_voting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/_weight_boosting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/tests/test_base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/tests/test_common.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/tests/test_forest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/tests/test_gradient_boosting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/tests/test_iforest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/tests/test_stacking.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/tests/test_voting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/ensemble/tests/test_weight_boosting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/experimental/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/experimental/enable_iterative_imputer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/experimental/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/experimental/tests/test_enable_hist_gradient_boosting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/experimental/tests/test_enable_iterative_imputer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/experimental/tests/test_enable_successive_halving.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/externals/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/externals/_arff.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/externals/_lobpcg.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/externals/_pep562.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/externals/_pilutil.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_extraction/_dict_vectorizer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_extraction/_hash.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_extraction/_hashing_fast.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_extraction/_stop_words.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_extraction/image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_extraction/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_extraction/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_extraction/tests/test_feature_hasher.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_extraction/tests/test_image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_extraction/text.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_selection/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_selection/_base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_selection/_mutual_info.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_selection/_rfe.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_selection/_univariate_selection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_selection/_variance_threshold.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_selection/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_selection/tests/test_chi2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_selection/tests/test_feature_select.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_selection/tests/test_rfe.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_selection/tests/test_sequential.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/gaussian_process/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/gaussian_process/_gpc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/gaussian_process/_gpr.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/gaussian_process/kernels.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/gaussian_process/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/gaussian_process/tests/_mini_sequence_kernel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/gaussian_process/tests/test_gpc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/gaussian_process/tests/test_gpr.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/gaussian_process/tests/test_kernels.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/impute/_base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/impute/_iterative.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/impute/_knn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/impute/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/impute/tests/test_base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/impute/tests/test_common.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/impute/tests/test_impute.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/impute/tests/test_knn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/inspection/_partial_dependence.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/inspection/_permutation_importance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/inspection/_plot/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/inspection/_plot/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/inspection/_plot/tests/test_plot_partial_dependence.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/inspection/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/inspection/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/inspection/tests/test_partial_dependence.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/inspection/tests/test_permutation_importance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/isotonic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/kernel_approximation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/kernel_ridge.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/_base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/_cd_fast.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/_glm/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/_glm/link.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/_glm/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/_glm/tests/test_glm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/_logistic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/_omp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/_passive_aggressive.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/_perceptron.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/_ransac.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/_ridge.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/_sag.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/_sag_fast.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/_sgd_fast.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/_theil_sen.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/tests/test_base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/tests/test_bayes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/tests/test_coordinate_descent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/tests/test_least_angle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/tests/test_omp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/tests/test_passive_aggressive.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/tests/test_ransac.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/tests/test_sag.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/tests/test_sgd.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/tests/test_sparse_coordinate_descent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/tests/test_theil_sen.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/manifold/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/manifold/_locally_linear.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/manifold/_mds.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/manifold/_spectral_embedding.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/manifold/_t_sne.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/manifold/_utils.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/manifold/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/manifold/tests/test_isomap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/manifold/tests/test_locally_linear.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/manifold/tests/test_spectral_embedding.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/manifold/tests/test_t_sne.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/_base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/_classification.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/_pairwise_fast.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/_plot/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/_plot/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/_plot/confusion_matrix.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/_plot/det_curve.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/_plot/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/_plot/tests/test_plot_confusion_matrix.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/_plot/tests/test_plot_curve_common.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/_plot/tests/test_plot_precision_recall.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/_regression.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/_scorer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/cluster/_bicluster.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/cluster/_expected_mutual_info_fast.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/cluster/_supervised.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/cluster/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/cluster/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/cluster/tests/test_bicluster.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/cluster/tests/test_common.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/cluster/tests/test_supervised.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/tests/test_classification.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/tests/test_ranking.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/metrics/tests/test_regression.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/mixture/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/mixture/_base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/mixture/_bayesian_mixture.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/mixture/_gaussian_mixture.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/mixture/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/mixture/tests/test_bayesian_mixture.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/mixture/tests/test_gaussian_mixture.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/mixture/tests/test_mixture.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/model_selection/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/model_selection/_search.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/model_selection/_search_successive_halving.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/model_selection/_split.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/model_selection/_validation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/model_selection/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/model_selection/tests/common.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/model_selection/tests/test_search.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/model_selection/tests/test_split.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/model_selection/tests/test_successive_halving.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/model_selection/tests/test_validation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/multiclass.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/multioutput.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/naive_bayes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/_ball_tree.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/_base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/_graph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/_nca.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/_nearest_centroid.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/_quad_tree.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/_quad_tree.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/_regression.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/_typedefs.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/_unsupervised.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/tests/test_kd_tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/tests/test_kde.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/tests/test_lof.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/tests/test_nca.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/tests/test_neighbors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/tests/test_neighbors_pipeline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/tests/test_quad_tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neural_network/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neural_network/_base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neural_network/_multilayer_perceptron.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neural_network/_rbm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neural_network/_stochastic_optimizers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neural_network/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neural_network/tests/test_mlp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/preprocessing/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/preprocessing/_csr_polynomial_expansion.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/preprocessing/_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/preprocessing/_discretization.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/preprocessing/_label.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/preprocessing/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/preprocessing/tests/test_common.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/preprocessing/tests/test_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/preprocessing/tests/test_encoders.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/preprocessing/tests/test_function_transformer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/preprocessing/tests/test_label.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/semi_supervised/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/semi_supervised/_label_propagation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/semi_supervised/_self_training.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/semi_supervised/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/semi_supervised/tests/test_self_training.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/svm/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/svm/_bounds.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/svm/_classes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/svm/_libsvm.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/svm/_libsvm_sparse.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/svm/_newrand.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/svm/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/svm/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/svm/tests/test_bounds.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/svm/tests/test_sparse.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/svm/tests/test_svm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_build.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_calibration.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_check_build.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_common.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_discriminant_analysis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_docstring_parameters.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_init.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_isotonic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_kernel_approximation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_kernel_ridge.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_metaestimators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_min_dependencies_readme.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_multiclass.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_naive_bayes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_pipeline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tests/test_random_projection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tree/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tree/_classes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tree/_criterion.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tree/_criterion.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tree/_reingold_tilford.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tree/_splitter.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tree/_splitter.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tree/_tree.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tree/_tree.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tree/_utils.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tree/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tree/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tree/tests/test_export.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/tree/tests/test_tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/_arpack.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/_cython_blas.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/_cython_blas.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/_encode.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/_fast_dict.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/_joblib.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/_logistic_sigmoid.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/_mask.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/_mocking.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/_pprint.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/_random.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/_seq_dataset.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/_show_versions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/_testing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/_weight_vector.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/_weight_vector.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/arrayfuncs.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/class_weight.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/deprecation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/estimator_checks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/extmath.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/fixes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/graph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/graph_shortest_path.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/metaestimators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/multiclass.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/murmurhash.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/murmurhash.pxd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/optimize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/random.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/sparsefuncs_fast.cp38-win_amd64.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/stats.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_arrayfuncs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_class_weight.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_cython_blas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_encode.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_estimator_checks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_estimator_html_repr.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_extmath.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_fast_dict.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_fixes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_metaestimators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_multiclass.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_parallel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_pprint.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_seq_dataset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_shortest_path.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_show_versions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_sparsefuncs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_stats.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_testing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/tests/test_validation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/threadpoolctl-2.1.0.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/threadpoolctl-2.1.0.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/threadpoolctl-2.1.0.dist-info/RECORD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/QA_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/QA_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/entity_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/entity_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/ner_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/ner_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/over_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/over_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/37338659-5469-44d7-ad12-9d8b7341d51c_2021-05-17-17-47-14_test (2).zip" beforeDir="false" afterPath="$PROJECT_DIR$/demo/temp/0b548c05-d0b8-4b3c-912b-bc9e495a2deb_2021-05-22-03-32-49_test (2).zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/49d7da7e-ae2d-4169-94c1-3802b5860432_2021-05-17-15-18-19_123.zip" beforeDir="false" afterPath="$PROJECT_DIR$/demo/temp/8c723c04-8e53-4a85-8684-9d4657dc16f6_2021-05-22-13-23-51_123.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/697d496b-4025-444c-838e-3feb2c70c3df_2021-05-17-15-22-30_123.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/8abaee03-2e9b-451f-bd78-7e9eb6c11354_2021-05-17-15-12-56_test (2).zip" beforeDir="false" afterPath="$PROJECT_DIR$/demo/temp/c44b628f-621a-43dd-9a1b-b822575f45c1_2021-05-22-13-25-09_test (2).zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/8d277810-c1ba-4195-9db3-e0c918fab823_2021-05-17-17-05-25_test (2).zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/93456fcb-084f-4cf4-b762-0f40a1d480df_2021-05-17-15-22-09_123.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/9905a35a-cbb6-454a-9cfe-798b9b5e5675_2021-05-17-14-42-29_test (2).zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/b2bed02f-6966-4e26-8fa3-50f6a70ca74c_2021-05-17-15-23-12_123.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/bb5cf6ee-ef8c-42bf-9be3-bb1b5a1639fb_2021-05-17-18-42-51_test (2).zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/temp/c12b6680-1374-47d2-b266-f82e97d641d1_2021-05-17-14-40-14_test (2).zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/up_load.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/up_load.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mykg/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mykg/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/over_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/over_view.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/question_answering.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/question_answering.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/auto_create.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/auto_create.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/relation.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/relation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/LDA_e.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/entity_datas.csv" beforeDir="false" afterPath="$PROJECT_DIR$/utils/entity_datas.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/mytest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/neo4j_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/neo4j_models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/test_similar.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/test_similar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/text.csv" beforeDir="false" afterPath="$PROJECT_DIR$/utils/text.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,8 +674,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -110,13 +719,13 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../demo12a" />
+    <property name="last_opened_file_path" value="G:/Download/sdal/三大案例/MusicRecSys/MusicRec" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -126,19 +735,19 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\pythonlearn\mykg\utils" />
-      <recent name="G:\pythonlearn\mykg\static\js" />
       <recent name="G:\pythonlearn\mykg\static\img" />
+      <recent name="G:\pythonlearn\mykg\static\js" />
       <recent name="G:\pythonlearn\mykg\static\css" />
       <recent name="G:\pythonlearn\mykg\static\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\pythonlearn\mykg\rabc\service" />
       <recent name="G:\pythonlearn\mykg\utils" />
+      <recent name="G:\pythonlearn\mykg\rabc\service" />
       <recent name="G:\pythonlearn\mykg\static\img" />
     </key>
   </component>
-  <component name="RunManager" selected="Django Server.mykg">
-    <configuration name="auto_create" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.QA_view">
+    <configuration name="QA_view" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="mykg" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -146,12 +755,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/demo" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/auto_create.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo/QA_view.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -160,7 +769,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="create1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="cos_sim" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="mykg" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -173,7 +782,29 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/create1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/cos_sim.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="dict2pickle" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="mykg" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/dict2pickle.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -204,7 +835,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_list" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test_similar" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="mykg" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -217,29 +848,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/test_list.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_url" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="mykg" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/test_url.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/test_similar.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -273,24 +882,24 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Django Server.mykg" />
+      <item itemvalue="Django server.mykg" />
+      <item itemvalue="Python.QA_view" />
+      <item itemvalue="Python.cos_sim" />
+      <item itemvalue="Python.dict2pickle" />
       <item itemvalue="Python.python_tf_idf" />
-      <item itemvalue="Python.test_url" />
-      <item itemvalue="Python.create1" />
-      <item itemvalue="Python.test_list" />
-      <item itemvalue="Python.auto_create" />
+      <item itemvalue="Python.test_similar" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.auto_create" />
+        <item itemvalue="Python.QA_view" />
         <item itemvalue="Python.python_tf_idf" />
-        <item itemvalue="Python.create1" />
-        <item itemvalue="Python.test_list" />
-        <item itemvalue="Python.test_url" />
+        <item itemvalue="Python.dict2pickle" />
+        <item itemvalue="Python.test_similar" />
+        <item itemvalue="Python.cos_sim" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -360,7 +969,22 @@
       <workItem from="1621153481024" duration="60000" />
       <workItem from="1621156487102" duration="18012000" />
       <workItem from="1621209137486" duration="25335000" />
-      <workItem from="1621302998338" duration="4997000" />
+      <workItem from="1621302998338" duration="9196000" />
+      <workItem from="1621390373561" duration="25112000" />
+      <workItem from="1621436446127" duration="4822000" />
+      <workItem from="1621441368749" duration="28000" />
+      <workItem from="1621441857236" duration="74000" />
+      <workItem from="1621442084891" duration="18103000" />
+      <workItem from="1621581037354" duration="5406000" />
+      <workItem from="1621604661475" duration="13283000" />
+      <workItem from="1621653686063" duration="4772000" />
+      <workItem from="1622046748433" duration="2055000" />
+      <workItem from="1622170816254" duration="3076000" />
+      <workItem from="1622183736490" duration="931000" />
+      <workItem from="1622186424785" duration="863000" />
+      <workItem from="1622191222029" duration="2923000" />
+      <workItem from="1622202333635" duration="4663000" />
+      <workItem from="1622341905454" duration="243000" />
     </task>
     <task id="LOCAL-00001" summary="一些测试和优化">
       <created>1621043826372</created>
@@ -397,11 +1021,18 @@
       <option name="project" value="LOCAL" />
       <updated>1621184001964</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="上云前的版本">
+      <created>1621347735767</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1621347735767</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ID_ORDER">
@@ -418,12 +1049,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -432,36 +1064,101 @@
     <MESSAGE value="前端card框和提示" />
     <MESSAGE value="自动导入的一些修改" />
     <MESSAGE value="自动导入基本完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="自动导入基本完成" />
+    <MESSAGE value="上云前的版本" />
+    <option name="LAST_COMMIT_MESSAGE" value="上云前的版本" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="487" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1621620055026">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="487" y="215" key="#com.intellij.fileTypes.FileTypeChooser/-206.-1440.2048.1112/0.0.1536.824@0.0.1536.824" timestamp="1621620055026" />
+    <state x="487" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1621474031454" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1622194877667">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/-2560.-238.2048.1112/0.0.1536.824@0.0.1536.824" timestamp="1622046793306" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1622194877667" />
+    <state width="1493" height="239" key="GridCell.Tab.0.bottom" timestamp="1621626379275">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="239" key="GridCell.Tab.0.bottom/-206.-1440.2048.1112/0.0.1536.824@0.0.1536.824" timestamp="1621626379275" />
+    <state width="1493" height="214" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1621469796166" />
+    <state width="1493" height="239" key="GridCell.Tab.0.center" timestamp="1621626379275">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="239" key="GridCell.Tab.0.center/-206.-1440.2048.1112/0.0.1536.824@0.0.1536.824" timestamp="1621626379275" />
+    <state width="1493" height="214" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1621469796166" />
+    <state width="1493" height="239" key="GridCell.Tab.0.left" timestamp="1621626379275">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="239" key="GridCell.Tab.0.left/-206.-1440.2048.1112/0.0.1536.824@0.0.1536.824" timestamp="1621626379275" />
+    <state width="1493" height="214" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1621469796166" />
+    <state width="1493" height="239" key="GridCell.Tab.0.right" timestamp="1621626379275">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="239" key="GridCell.Tab.0.right/-206.-1440.2048.1112/0.0.1536.824@0.0.1536.824" timestamp="1621626379275" />
+    <state width="1493" height="214" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1621469796166" />
+    <state width="1493" height="257" key="GridCell.Tab.1.bottom" timestamp="1621620210707">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="257" key="GridCell.Tab.1.bottom/-206.-1440.2048.1112/0.0.1536.824@0.0.1536.824" timestamp="1621620210707" />
+    <state width="1493" height="257" key="GridCell.Tab.1.center" timestamp="1621620210706">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="257" key="GridCell.Tab.1.center/-206.-1440.2048.1112/0.0.1536.824@0.0.1536.824" timestamp="1621620210706" />
+    <state width="1493" height="257" key="GridCell.Tab.1.left" timestamp="1621620210706">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="257" key="GridCell.Tab.1.left/-206.-1440.2048.1112/0.0.1536.824@0.0.1536.824" timestamp="1621620210706" />
+    <state width="1493" height="257" key="GridCell.Tab.1.right" timestamp="1621620210707">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="257" key="GridCell.Tab.1.right/-206.-1440.2048.1112/0.0.1536.824@0.0.1536.824" timestamp="1621620210707" />
+    <state x="449" y="238" width="638" height="349" key="com.intellij.ide.util.TipDialog" timestamp="1622342151719">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="236" key="com.intellij.ide.util.TipDialog/-206.-1440.2048.1112/0.0.1536.824@0.0.1536.824" timestamp="1621606283623" />
+    <state x="449" y="238" width="638" height="349" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1622342151719" />
+    <state x="626" y="306" key="publish.login" timestamp="1621442335997">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="626" y="306" key="publish.login/-206.-1440.2048.1112/0.0.1536.824@0.0.1536.824" timestamp="1621442335997" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1622307764044">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.-1440.2048.1112/0.0.1536.824@0.0.1536.824" timestamp="1622307764044" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/utils/test_similar.py</url>
-          <line>79</line>
+          <line>89</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/mykg$mytest.coverage" NAME="mytest Coverage Results" MODIFIED="1620890801832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/mykg$test_url.coverage" NAME="test_url Coverage Results" MODIFIED="1620922784071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/mykg$QA_view.coverage" NAME="QA_view Coverage Results" MODIFIED="1620563558347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/demo" />
-    <SUITE FILE_PATH="coverage/mykg$python_tf_idf.coverage" NAME="python_tf_idf Coverage Results" MODIFIED="1621145565453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/mykg$read_csv_test.coverage" NAME="read_csv_test Coverage Results" MODIFIED="1620711627185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/mykg$ttst.coverage" NAME="ttst Coverage Results" MODIFIED="1620561694158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/mykg$test_w_csv.coverage" NAME="test_w_csv Coverage Results" MODIFIED="1620919690285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/mykg$json2csv.coverage" NAME="json2csv Coverage Results" MODIFIED="1615880691675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/mykg$csv2mysql.coverage" NAME="csv2mysql Coverage Results" MODIFIED="1620666264127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/mykg$stop_word_ana.coverage" NAME="stop_word_ana Coverage Results" MODIFIED="1620884040147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/mykg$python_tf_idf.coverage" NAME="python_tf_idf Coverage Results" MODIFIED="1621620210692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/mykg$read_csv_test.coverage" NAME="read_csv_test Coverage Results" MODIFIED="1620711627185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/mykg$mytest.coverage" NAME="mytest Coverage Results" MODIFIED="1620890801832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/mykg$auto_create.coverage" NAME="auto_create Coverage Results" MODIFIED="1621168431324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/mykg$pre_load.coverage" NAME="pre_load Coverage Results" MODIFIED="1615896260597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/mykg$test_list.coverage" NAME="test_list Coverage Results" MODIFIED="1620979799506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/mykg$LDA_e.coverage" NAME="LDA_e Coverage Results" MODIFIED="1620918778451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/mykg$test_similar.coverage" NAME="test_similar Coverage Results" MODIFIED="1620883877007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/mykg$create1.coverage" NAME="create1 Coverage Results" MODIFIED="1621051798918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/mykg$cos_sim.coverage" NAME="cos_sim Coverage Results" MODIFIED="1621414610271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/mykg$ttst.coverage" NAME="ttst Coverage Results" MODIFIED="1620561694158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/mykg$dict2pickle.coverage" NAME="dict2pickle Coverage Results" MODIFIED="1621469762665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/mykg$doc_sim.coverage" NAME="doc_sim Coverage Results" MODIFIED="1621407076290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/mykg$pre_load.coverage" NAME="pre_load Coverage Results" MODIFIED="1615896260597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/mykg$annotation.coverage" NAME="annotation Coverage Results" MODIFIED="1618033432070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/demo" />
+    <SUITE FILE_PATH="coverage/mykg$stop_word_ana.coverage" NAME="stop_word_ana Coverage Results" MODIFIED="1620884040147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/mykg$json2csv.coverage" NAME="json2csv Coverage Results" MODIFIED="1615880691675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/mykg$QA_view.coverage" NAME="QA_view Coverage Results" MODIFIED="1621626355865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/demo" />
+    <SUITE FILE_PATH="coverage/mykg$test_url.coverage" NAME="test_url Coverage Results" MODIFIED="1620922784071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/mykg$test_similar.coverage" NAME="test_similar Coverage Results" MODIFIED="1621420172491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/mykg$create1.coverage" NAME="create1 Coverage Results" MODIFIED="1621051798918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/mykg$LDA_e.coverage" NAME="LDA_e Coverage Results" MODIFIED="1620918778451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
   </component>
 </project>

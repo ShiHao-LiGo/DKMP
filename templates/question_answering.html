@@ -1,12 +1,11 @@
 {% extends "base.html" %} {% block mainbody %}
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-    <meta charset="utf-8" />
-    <script src="/static/js/echarts.js"></script>
-{#    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>#}
-</head>
-<div class="container">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title></title>
+        <meta charset="utf-8"/>
+        <script src="/static/js/echarts.js"></script>
+        {#    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>#}
+    </head>
     <div class="row">
         <div class="col-md-12">
 
@@ -29,20 +28,27 @@
                     <form class="form-inline" method="get">
                         <div class="form-row">
                             <div class="form-group col-md-10">
-                                <input type="text" name="question" id="question" class="form-control" placeholder="Enter text" >  </input>
+                                <input type="text" name="question" id="question" class="form-control"
+                                       placeholder="Enter text"> </input>
                             </div>
                             <div class="form-group col-md-2">
-                                <button type="submit" class="btn btn-primary btn-block"> 提交 </button>
+                                <button type="submit" class="btn btn-primary btn-block"> 提交</button>
                             </div>
                         </div>
                         <br/><br/>
                         <div class="form-row">
                             <div class="form-group col-md-12">
-                            <p>
-                                热门搜索： <a href="#" onclick="$('#question').attr('value',' Firefox里经常出Bug的是哪些组件？')">  Firefox里经常出Bug的是哪些组件？</a> &nbsp;&nbsp;
-                                <a href="#" onclick="$('#question').attr('value','  What\'s the type of bug-1643419？')">   What's the type of bug-1643419？</a> &nbsp;&nbsp;
-                                <a href="#" onclick="$('#question').attr('value','Bug-1643419\'s description？')"> Bug-1643419's description？</a> &nbsp;&nbsp;
-                            </p>
+                                <p>
+                                    热门搜索： <a href="#"
+                                             onclick="$('#question').attr('value',' Firefox里经常出Bug的是哪些组件？')">
+                                    Firefox里经常出Bug的是哪些组件？</a> &nbsp;&nbsp;
+                                    <a href="#"
+                                       onclick="$('#question').attr('value','  What\'s the type of bug-1643419？')">
+                                        What's the type of bug-1643419？</a> &nbsp;&nbsp;
+                                    <a href="#"
+                                       onclick="$('#question').attr('value','Bug-1643419\'s description？')">
+                                        Bug-1643419's description？</a> &nbsp;&nbsp;
+                                </p>
                             </div>
                         </div>
                     </form>
@@ -51,49 +57,171 @@
 
             <div class="row">
                 {% if cttx %}
-                <div class = "col-md-12">
-                    <div class="panel panel-default">
-                        <header class ="panel-heading">
-                            <div class = "panel-body">
-                                <h2>暂未找到答案</h2>
-                            </div>
-                        </header>
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <header class="panel-heading">
+                                <div class="panel-body">
+                                    <h2>暂未找到答案</h2>
+                                </div>
+                            </header>
+                        </div>
                     </div>
-                </div>
                 {% endif %}
-            {% if ctx %}
-                <div class="col-md-4">
-                    <section class="panel panel-default">
-                        <div class="panel-body">
-                            <table class="table" data-paging="true" data-sorting = "true" data-paging-size="10"></table>
+                {% if ctx %}
+                    <div class="col-md-8">
+                        <section class="panel panel-default">
+                            <div class="panel-body">
+                                <div id="graph" style="width: 100%;height:600px;"></div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-4">
+                        <section class="panel panel-default">
+                            <div class="panel-body">
+                                <table class="table" data-paging="true" data-sorting="true"
+                                       data-paging-size="10"></table>
+                            </div>
+                        </section>
+                        <h3>Top5相似缺陷如下</h3>
+                        <div class="panel-group" id="panelGroup">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a id="bug1" href="#collapse1" data-toggle="collapse" data-parent="#panelGroup">
+
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse1" class="panel-collapse collapse">
+                                    <div id="con1" class="panel-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a id="bug2" href="#collapse2" data-toggle="collapse" data-parent="#panelGroup">
+
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse2" class="panel-collapse collapse">
+                                    <div id="con2" class="panel-body">
+                                        <a href="#myModal" data-toggle="modal" data-target="#myModal">查看关系图</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a id="bug3" href="#collapse3" data-toggle="collapse" data-parent="#panelGroup">
+
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse3" class="panel-collapse collapse">
+                                    <div id="con3" class="panel-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a id="bug4" href="#collapse4" data-toggle="collapse" data-parent="#panelGroup">
+
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse4" class="panel-collapse collapse">
+                                    <div id="con4" class="panel-body">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a id="bug5" href="#collapse5" data-toggle="collapse" data-parent="#panelGroup">
+
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse5" class="panel-collapse collapse">
+                                    <div id="con5" class="panel-body">
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </section>
-                </div>
-                <div class="col-md-8">
-                     <section class="panel panel-default">
-                        <div class="panel-body">
-                            <div id="graph" style="width: 100%;height:600px;"></div>
-                        </div>
-                    </section>
-                </div>
-            {% endif %}
+
+
+                    </div>
+
+                {% endif %}
             </div>
 
 
         </div>
 
     </div>
-</div>
-<script src="/static/js/jquery-1.8.3.min.js"></script>
+    <script src="/static/js/jquery-1.8.3.min.js"></script>
 
-{% if ctx %}
-<script type="text/javascript">
-            var ret = {"比好":"你好"};
+    {% if ctx %}
+        <script type="text/javascript">
+            var myChart1 = echarts.init(document.getElementById('graph1'));
+        </script>
+        <script type="text/javascript">
+            var ret = {"比好": "你好"};
             var myChart = echarts.init(document.getElementById('graph'));
-            var ret_dict =   {{ ctx|safe }}  ;
-            console.log('ret_dict', ret_dict);
-            console.log(typeof (ret_dict["answer"]));
-            console.log(typeof (ret_dict["answers"]));
+            var ret_dict =   {{ ctx|safe }};
+            {#console.log('ret_dict', ret_dict);#}
+            {#console.log(typeof (ret_dict["answer"]));#}
+            {#console.log(typeof (ret_dict["answers"]));#}
+            {#alert(ret_dict['tuijian'])#}
+            console.log(ret_dict);
+            var rel = new Array(5);
+            var pri = new Array(5);
+            var pro = new Array(5);
+            var sev = new Array(5);
+            var sta = new Array(5);
+            var tit = new Array(5);
+            var com = new Array(5);
+            for (var i = 0; i < 5; i++) {
+                rel[i] = ret_dict["recommend"][i]["q_id"];
+                pri[i] = ret_dict["recommend"][i]["q_priority"]["Priority"];
+                pro[i] = ret_dict["recommend"][i]["q_product"]["product"];
+                sev[i] = ret_dict["recommend"][i]["q_severity"]["Severity"];
+                sta[i] = ret_dict["recommend"][i]["q_status"]["Status"];
+                tit[i] = ret_dict["recommend"][i]["q_title"]["title"];
+                com[i] = ret_dict["recommend"][i]["q_comment"]["comment"];
+            }
+            {#alert(ret_dict["recommend"][0]["q_priority"]["Priority"]);#}
+            jQuery(function () {
+                $('#bug1').text("Bug:" + rel[0]);
+                $('#bug2').text("Bug:" + rel[1]);
+                $('#bug3').text("Bug:" + rel[2]);
+                $('#bug4').text("Bug:" + rel[3]);
+                $('#bug5').text("Bug:" + rel[4]);
+                $('#myModalLabel1').text("Bug:" + rel[0]);
+                $('#myModalLabel2').text("Bug:" + rel[1]);
+                $('#myModalLabel3').text("Bug:" + rel[2]);
+                $('#myModalLabel4').text("Bug:" + rel[3]);
+                $('#myModalLabel5').text("Bug:" + rel[4]);
+                $('#con1').html("<p>Priority : " + pri[0] + "</p><p>Severity : " + sev[0] + "</p><p>Product : " + pro[0] + "</p><p>Status : " + sta[0] + "</p><a data-toggle=\"modal\"data-target=\"#myModal1\">点击查看此Bug详细信息</a>");
+                $('#con2').html("<p>Priority : " + pri[1] + "</p><p>Severity : " + sev[1] + "</p><p>Product : " + pro[1] + "</p><p>Status : " + sta[1] + "</p><a data-toggle=\"modal\"data-target=\"#myModal2\">点击查看此Bug详细信息</a>");
+                $('#con3').html("<p>Priority : " + pri[2] + "</p><p>Severity : " + sev[2] + "</p><p>Product : " + pro[2] + "</p><p>Status : " + sta[2] + "</p><a data-toggle=\"modal\"data-target=\"#myModal3\">点击查看此Bug详细信息</a>");
+                $('#con4').html("<p>Priority : " + pri[3] + "</p><p>Severity : " + sev[3] + "</p><p>Product : " + pro[3] + "</p><p>Status : " + sta[3] + "</p><a data-toggle=\"modal\"data-target=\"#myModal4\">点击查看此Bug详细信息</a>");
+                $('#con5').html("<p>Priority : " + pri[4] + "</p><p>Severity : " + sev[4] + "</p><p>Product : " + pro[4] + "</p><p>Status : " + sta[4] + "</p><a data-toggle=\"modal\"data-target=\"#myModal5\">点击查看此Bug详细信息</a>");
+                $('#body1').html("<p>Priority : " + pri[0] + "</p><p>Severity : " + sev[0] + "</p><p>Product : " + pro[0] + "</p><p>Status : " + sta[0] + "</p><p>Describe:"+tit[0]+"</p><p>Details:"+com[0]+"</p>");
+                $('#body2').html("<p>Priority : " + pri[1] + "</p><p>Severity : " + sev[1] + "</p><p>Product : " + pro[1] + "</p><p>Status : " + sta[1] + "</p><p>Describe:"+tit[1]+"</p><p>Details:"+com[1]+"</p>");
+                $('#body3').html("<p>Priority : " + pri[2] + "</p><p>Severity : " + sev[2] + "</p><p>Product : " + pro[2] + "</p><p>Status : " + sta[2] + "</p><p>Describe:"+tit[2]+"</p><p>Details:"+com[2]+"</p>");
+                $('#body4').html("<p>Priority : " + pri[3] + "</p><p>Severity : " + sev[3] + "</p><p>Product : " + pro[3] + "</p><p>Status : " + sta[3] + "</p><p>Describe:"+tit[3]+"</p><p>Details:"+com[3]+"</p>");
+                $('#body5').html("<p>Priority : " + pri[4] + "</p><p>Severity : " + sev[4] + "</p><p>Product : " + pro[4] + "</p><p>Status : " + sta[4] + "</p><p>Describe:"+tit[4]+"</p><p>Details:"+com[4]+"</p>");
+
+            });
             // 将所有的答案列在tableData中
             tableData = [];
             // 判断传过来的数据是一个值还是一组值
@@ -116,7 +244,7 @@
                     "columns": [{"name": "answer", title: "答案"}],
                     "rows": tableData
                 });
-             });
+            });
 
             // echarts 数据
             var data = [];
@@ -128,7 +256,25 @@
                 category: 0,
                 symbolSize: 50,
             };
+
             data.push(node1);
+            var nam = new Array(5);
+            for (var i = 0; i < 5; i++) {
+                var node1 = {
+                    name: ret_dict["recommend"][i]["q_id"],
+                    category: 0,
+                    symbolSize: 50,
+                };
+                data.push(node1);
+                var link1={
+                    source: ret_dict["bid"],
+                    target: ret_dict["recommend"][i]["q_id"],
+                    name: "similar",
+                    des: "similar"
+                };
+                links.push(link1)
+            }
+
             for (var i = 0; i < ret_dict["relations"].length; i++) {
                 var node2 = {
                     name: ret_dict["relations"][i][1],
@@ -152,7 +298,7 @@
                 name: 'Text'
             }];
 
-option = {
+            option = {
                 // 图的标题
                 title: {
                     text: 'BugKG 关系图'
@@ -223,10 +369,12 @@ option = {
                     label: {
                         normal: {
                             show: true,
-                            textStyle: {color: "#ffa940",
-                            fontWeight:'bolder',
+                            textStyle: {
+                                color: "#ffa940",
+                                fontWeight: 'bolder',
                                 fontSize: 20,
-                                fontStyle: 'oblique',}
+                                fontStyle: 'oblique',
+                            }
                         }
                     },
 
@@ -237,7 +385,100 @@ option = {
                 }]
             };
             myChart.setOption(option);
-</script>
-{% endif %}
-
+        </script>
+    {% endif %}
+    {#    模态框#}
+    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document" style="width: 1000px">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel1"></h4>
+                </div>
+                <div class="modal-body" >
+                    <div id="body1">
+                    </div>
+                    <div id="graph1" style="width: 100%;height:600px;"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    {#                    <button type="button" class="btn btn-primary">Save</button>#}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document" style="width: 1000px">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel2"></h4>
+                </div>
+                <div class="modal-body" id="body2">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    {#                    <button type="button" class="btn btn-primary">Save</button>#}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document" style="width: 1000px">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel3">Modal title3</h4>
+                </div>
+                <div class="modal-body" id="body3">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    {#                    <button type="button" class="btn btn-primary">Save</button>#}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document" style="width: 1000px">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel4"></h4>
+                </div>
+                <div class="modal-body" id="body4">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    {#                    <button type="button" class="btn btn-primary">Save</button>#}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document" style="width: 1000px">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel5"></h4>
+                </div>
+                <div class="modal-body" id="body5">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    {#                    <button type="button" class="btn btn-primary">Save</button>#}
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}

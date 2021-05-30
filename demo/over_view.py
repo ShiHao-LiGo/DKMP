@@ -43,31 +43,45 @@ ctx = {}
 #     return render(request, "entity.html", {'ctx': ctx})
 
 def over_view(request):
-    ctx = {}
-    entity = "108746"
-    # 连接数据库
-
-    db = neo_con
-    entityRelation = db.getEntityRelationbyEntity(entity)
-    # print(json.dumps(entityRelation, ensure_ascii=False))
-    # for i in entityRelation:
-    #     print(list(i['rel'].types())[0])
-    if len(entityRelation) == 0:
-        # 若数据库中无法找到该实体，则返回数据库中无该实体
-        ctx = {'title': '<h1>数据库中暂未添加该实体</h1>'}
-        return render(request, 'entity.html', {'ctx': json.dumps(ctx, ensure_ascii=False)})
-    else:
-        # print("111111")
-        # 返回查询结果
-        # 将查询结果按照"关系出现次数"的统计结果进行排序
-        entityRelation = sortDict(entityRelation)
-        kk = json.dumps(entityRelation, ensure_ascii=False)
-        tt = json.loads(kk)
-        # print(tt)
-        for i in range(len(entityRelation)):
-            # print(tt[i]["rel"])
-            tt[i]["rel"]["type"] = list(entityRelation[i]['rel'].types())[0]
-            # print(tt[i]["rel"])
-        # logging.debug(json.dumps(entityRelation, ensure_ascii=False))
-
-        return render(request, 'over_view.html', {'entityRelation': json.dumps(tt, ensure_ascii=False)})
+    tt = [{'rel': {'name': 'Describe', 'type': 'Describe'}, 'entity2': {'name': 'crash'}, 'relationCount': 0},
+          {'rel': {'name': 'Describe', 'type': 'Describe'}, 'entity2': {'name': 'open'}, 'relationCount': 0},
+          {'rel': {'name': 'Describe', 'type': 'Describe'}, 'entity2': {'name': 'immediate'}, 'relationCount': 0},
+          {'rel': {'name': 'Describe', 'type': 'Describe'}, 'entity2': {'name': 'list properties'}, 'relationCount': 0},
+          {'rel': {'name': 'Describe', 'type': 'Describe'}, 'entity2': {'name': 'select'}, 'relationCount': 0},
+          {'rel': {'name': 'Describe', 'type': 'Describe'}, 'entity2': {'name': 'cursor'}, 'relationCount': 0},
+          {'rel': {'name': 'Describe', 'type': 'Describe'}, 'entity2': {'name': 'right click'}, 'relationCount': 0},
+          {'rel': {'name': 'Describe', 'type': 'Describe'}, 'entity2': {'name': 'browser'}, 'relationCount': 0},
+          {'rel': {'name': 'Describe', 'type': 'Describe'}, 'entity2': {'name': 'edit page'}, 'relationCount': 0},
+          {'rel': {'name': 'Status', 'type': 'Status'}, 'entity2': {'name': 'VERIFIED'}, 'relationCount': 0},
+          {'rel': {'name': 'Severity', 'type': 'Severity'}, 'entity2': {'name': 'critical'}, 'relationCount': 0},
+          {'rel': {'name': 'Priority', 'type': 'Priority'}, 'entity2': {'name': 'Not set'}, 'relationCount': 0},
+          {'rel': {'name': 'Type', 'type': 'Type'}, 'entity2': {'name': 'defect'}, 'relationCount': 0},
+          {'rel': {'name': 'Product', 'type': 'Product'}, 'entity2': {'name': 'SeaMonkey'}, 'relationCount': 0}]
+    return render(request, 'over_view.html', {'entityRelation': json.dumps(tt, ensure_ascii=False)})
+    # ctx = {}
+    # entity = "108746"
+    # # 连接数据库
+    #
+    # db = neo_con
+    # entityRelation = db.getEntityRelationbyEntity(entity)
+    # # print(json.dumps(entityRelation, ensure_ascii=False))
+    # # for i in entityRelation:
+    # #     print(list(i['rel'].types())[0])
+    # if len(entityRelation) == 0:
+    #     # 若数据库中无法找到该实体，则返回数据库中无该实体
+    #     ctx = {'title': '<h1>数据库中暂未添加该实体</h1>'}
+    #     return render(request, 'entity.html', {'ctx': json.dumps(ctx, ensure_ascii=False)})
+    # else:
+    #     # print("111111")
+    #     # 返回查询结果
+    #     # 将查询结果按照"关系出现次数"的统计结果进行排序
+    #     entityRelation = sortDict(entityRelation)
+    #     kk = json.dumps(entityRelation, ensure_ascii=False)
+    #     tt = json.loads(kk)
+    #     # print(tt)
+    #     for i in range(len(entityRelation)):
+    #         # print(tt[i]["rel"])
+    #         tt[i]["rel"]["type"] = list(entityRelation[i]['rel'].types())[0]
+    #         # print(tt[i]["rel"])
+    #     # logging.debug(json.dumps(entityRelation, ensure_ascii=False))
+    #     print(tt)

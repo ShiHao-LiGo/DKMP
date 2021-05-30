@@ -14,7 +14,7 @@ class Neo4j:
 
     # 初始化neo4j,建立连接
     def connectDB(self):
-        self.graph = Graph("http://localhost:7474", username="neo4j", password="123456789")
+        self.graph = Graph("http://118.195.147.91:7474", username="neo4j", password="123456789")
 
     # 根据结点的title属性title返回结点
     def matchItembyname(self, value):
@@ -102,7 +102,7 @@ class Neo4j:
     # 查找entity2及其对应的关系
     def findRelationByEntity2(self, entity1):
         answer = self.graph.run(
-            "MATCH (n1)- [rel] -> (n2 {name:\"" + str(entity1) + "\"}) RETURN n1,rel,n2 Limit 50").data()
+            "MATCH (n1)- [rel] -> (n2 {name:\"" + str(entity1) + "\"}) RETURN n1,rel,n2 Limit 15").data()
         print(answer)
 
         # if(answer is None):

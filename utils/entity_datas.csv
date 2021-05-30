@@ -1,16 +1,23 @@
-﻿loop,10
+﻿Stub Installer,10
+install,10
+context menu,10
+loop,10
 code,10
+Bug 1190351,10
 variable,10
 type,10
+Firefox,10
 bottom,10
 Junk characters,10
 Gnome shell,10
 KDE Plasma,10
 Unity,10
+Mozilla,10
 core,10
 GUI,10
 Network,10
 I/O,10
+manually,10
 Driver,10
 File System,10
 Hardware,10
@@ -53,6 +60,7 @@ ReopenEditorMenu,10
 Resources Perspective,10
 text,10
 Modem,10
+taskbar,10
 Openflow,10
 HTTP,10
 HTTPS,10
@@ -66,6 +74,8 @@ NFS,10
 RTSP,10
 XMPP,10
 Whois,10
+executing,10
+tests,10
 TLS,10
 XDR,10
 ASN.1,10
@@ -76,6 +86,7 @@ RPC,10
 NetBIOS,10
 ASP,10
 IGMP,10
+shows,10
 Winsock,10
 BSD sockets,10
 TCP,10
