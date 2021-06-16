@@ -29,7 +29,7 @@
             </div>
         </div>
         <!--logo start-->
-        <a href="/" class="logo"> 软件缺陷知识管理平台 <span class="lite">BUG-KG</span></a>
+        <a href="/" class="logo">  <span class="lite">BUG-KG</span></a>
         <!--logo end-->
         <div class="top-nav notification-row">
             <!-- notificatoin dropdown start-->
@@ -37,14 +37,14 @@
                 {% if request.session.username %}
                     <li>
                         <a href="{% url 'demo:Logout' %}">
-                            <span>欢迎,{{ request.session.username }} </span><i class="iconfont icon-zhuxiaodenglu"></i>
-                            <span>注销</span></a>
+                            <span>Welcome,{{ request.session.username }} </span><i class="iconfont icon-zhuxiaodenglu"></i>
+                            <span>Login out</span></a>
                     </li>
                 {% elif not request.session.username %}
                     <li>
                         <a class="" href="{% url 'demo:Login' %}">
                             <i class="iconfont icon-denglu-yonghu"></i>
-                            <span>用户登录</span>
+                            <span>Login in</span>
                         </a>
                     </li>
                 {% endif %}
@@ -65,7 +65,7 @@
                 <li>
                     <a class="" href="/overview">
                         <i class="icon_piechart"></i>
-                        <span>缺陷知识概览</span>
+                        <span>Overview</span>
                     </a>
                 </li>
                 {#                    <li>#}
@@ -78,21 +78,21 @@
                 <li>
                     <a class="" href="/relation">
                         <i class=" social_googledrive"></i>
-                        <span>实体&关系查询</span>
+                        <span>Entity&Relationship</span>
                     </a>
                 </li>
 
                 <li>
                     <a class="" href="/shibie">
                         <i class="icon_house_alt"></i>
-                        <span>实体识别</span>
+                        <span>Entity recognition</span>
                     </a>
                 </li>
 
                 <li>
                     <a class="" href="/q_a">
                         <i class="icon_chat_alt"></i>
-                        <span>智能问答</span>
+                        <span>QA&Recommend</span>
                     </a>
                 </li>
 
@@ -100,29 +100,36 @@
                     <a class="" href="/annotating">
                         <i class="iconfont icon-shujudaoru1"></i>
                         {#                            <i class="iconfont icon-zhuxiaodenglu"></i>#}
-                        <span>数据导入</span>
+                        <span>Bulk import</span>
                     </a>
                 </li>
-                <li>
-                    <a class="" href="/rel">
-                        <i class="iconfont icon-shujudaoru1"></i>
-                        {#                            <i class="iconfont icon-zhuxiaodenglu"></i>#}
-                        <span>空白</span>
-                    </a>
-                </li>
+{#                <li>#}
+{#                    <a class="" href="/rel">#}
+{#                        <i class="iconfont icon-shujudaoru1"></i>#}
+{#                                                    <i class="iconfont icon-zhuxiaodenglu"></i>#}
+{#                        <span>空白</span>#}
+{#                    </a>#}
+{#                </li>#}
+{#                <li>#}
+{#                    <a class="" href="/daoru">#}
+{#                        <i class="iconfont icon-shujudaoru1"></i>#}
+{#                                                    <i class="iconfont icon-zhuxiaodenglu"></i>#}
+{#                        <span>导入</span>#}
+{#                    </a>#}
+{#                </li>#}
                 {#                    <li>#}
                 {#                        <a class="" href="/test">#}
                 {#                            <i class="iconfont icon-ceshi"></i>#}
                 {#                            <span>测试</span>#}
                 {#                        </a>#}
                 {#                    </li>#}
-{#                <li>#}
-{#                    <a class="" id="biaozhu">#}
-{#                        <i class="fa fa-database"></i>#}
-{#                        <span>数据标注</span>#}
-{#                    </a>#}
-{#                </li>#}
-{#                <li>#}
+                <li>
+                    <a class="" id="biaozhu">
+                        <i class="fa fa-database"></i>
+                        <span>Data Annotation</span>
+                    </a>
+                </li>
+                <li>
 {#                    <a class="" href="/test_QA">#}
 {#                        <i class="fa fa-database"></i>#}
 {#                        <span>testQA</span>#}
@@ -215,7 +222,7 @@
             $("section").toggleClass("sidebar-closed");
         });
         $("#biaozhu").click(function () {
-            window.location.href = "http://127.0.0.1:8000";
+            window.location.href = "http://vip.aeert.com:12295/";
         });
         {#$("#owl-slider").owlCarousel({#}
         {#    navigation: true,#}

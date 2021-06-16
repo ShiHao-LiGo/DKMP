@@ -1,7 +1,7 @@
 from django.conf.urls import url
 from django.urls import path
 
-from . import QA_view,entity_view,index_view,relation_view,up_load,over_view,ner_view,login_view
+from . import QA_view,entity_view,index_view,relation_view,up_load,over_view,ner_view,login_view,biaozhu_post
 from .login_view import user
 from .views import *
 app_name = 'demo'
@@ -25,6 +25,9 @@ urlpatterns = [
     path('test_QA/',QA_view.QA1),
     path('testtupu/',relation_view.testtupu),
     path('rel/',entity_view.rel),
+    path('label_post/',biaozhu_post.get_data),
+    path('daoru/',up_load.to_fileuploadhaha),
+    path('daoru01/',up_load.localhaha,name='localhaha'),
 ]
 
 

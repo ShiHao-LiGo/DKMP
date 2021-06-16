@@ -264,7 +264,8 @@ def kankan():
 def to_fileupload(request):
     return render(request, 'annotate.html')
 
-
+def to_fileuploadhaha(request):
+    return render(request, 'daoru.html')
 def local(request):
     file = request.FILES.get('file')
     # print("我来了")
@@ -321,7 +322,7 @@ def local(request):
     ts = time.time()
     Bug_Id = str(ts)[0:9]
     # print(Bug_Id)
-    graph = Graph("http://localhost:7474", username="neo4j", password='123456789')
+    graph = Graph("http://118.195.147.91:7474", username="neo4j", password='123456789')
     node_ID = Node('Bud_Id', name=Bug_Id)
     graph.create(node_ID)
 
@@ -383,3 +384,89 @@ def local(request):
 #     return HttpResponse(json.dumps(ctx, ensure_ascii=False))
 #     # return HttpResponse(star)
 #     # return redirect("/login")
+def localhaha(request):
+    file = request.FILES.get('file')
+    # print("我来了")
+    # print(file)
+    # print(request.FILES.get('file[]'))
+    # print(request)
+    if not file:
+        return HttpResponse('请选择要导入的文件！<a href="/daoru/">返回</a> ')
+
+    # file_name = os.getcwd()+'\\demo\\temp\\{}_{}_{}'.format(uuid.uuid4(), datetime.now().strftime('%Y-%m-%d-%H-%M-%S'), file.name)
+    path = os.getcwd() + '/demo/temp/{}_{}_{}'.format(uuid.uuid4(), datetime.now().strftime('%Y-%m-%d-%H-%M-%S'),
+                       file.name)
+    with open(path, 'wb') as f:
+        for chunk in file.chunks():
+            f.write(chunk)
+    zfile = zipfile.ZipFile(path, "r")
+    kk = ""
+    star = ""
+    for item in zfile.namelist():
+        if item.endswith(".txt"):
+            zfile.extract(item, os.getcwd() + '/demo/temp/txt')
+    zfile.close()
+    for item in zfile.namelist():
+        if item.endswith(".txt"):
+            txt_path = os.getcwd() + '/demo/temp/txt/' + item
+            f = open(txt_path, "r", encoding='utf-8')
+            star = star + " " + f.read()
+    f.close()
+    print(star)
+    ctx = {}
+    ctx["rlt"] = star
+    # 计算开始的时间
+    start = time.time()
+    # 加载库中其他缺陷的预处理结果
+    load_list = kankan()
+    # print(load_list)
+    sentence = star
+    # 读取现有语料库
+    read()
+    # 经过预处理的新数据
+    word_list = fenci(sentence)
+    # cunchu(word_list)
+    # print(word_list)
+    # print(len(word_list))
+    for i in range(len(word_list)):
+        count = Counter(word_list[i])
+        countlist.append(count)
+    # 得到抽取的结果
+    answers = jisuan(sentence)
+    print("答案")
+    print(answers)
+    # ReadTxtName()
+    end = time.time()
+    # print(str(end - start))
+    ts = time.time()
+    Bug_Id = str(ts)[0:9]
+    # print(Bug_Id)
+    graph = Graph("http://118.195.147.91:7474", username="neo4j", password='123456789')
+    node_ID = Node('Bud_Id', name=Bug_Id)
+    graph.create(node_ID)
+
+    for k in range(len(answers)):
+        t = Node('Describe', name=answers[k])
+        # print(answers[k])
+        graph.create(t)
+        relation = Relationship(node_ID, 'Describe', t, name="Describe")
+        graph.create(relation)
+        # 若只输入entity1,则输出与entity1有直接关系的实体和关系
+    if (len(Bug_Id) != 0):
+        db = neo_con
+        searchResult = db.findRelationByEntity(Bug_Id)
+        searchResult = sortDict(searchResult)
+        # if searchResult == None:
+        #     return render(request, "relation.html", {'ctx': ctx})
+        kk = json.dumps(searchResult, ensure_ascii=False)
+        tt = json.loads(kk)
+        # print("11111111111111111")
+        for i in range(len(searchResult)):
+            # print(tt[i]["rel"])
+            tt[i]["rel"]["type"] = list(searchResult[i]['rel'].types())[0]
+            #     print("111111111111111111")
+            #     print(tt[i]["rel"])
+            # print(json.dumps(tt, ensure_ascii=False))
+        if (len(searchResult) > 0):
+            return render(request, 'daoru.html', {'searchResult': json.dumps(tt, ensure_ascii=False)})
+    return render(request, "daoru.html", {'ans':'数据不规范'})
